@@ -1,6 +1,5 @@
 {% load bootstrap3 %}
 {% load static%}
-{% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +9,7 @@
     <title>Prime Cover Insurance Agency</title>
     {% block styles %}
     {% bootstrap_css %}
-    <link rel="stylesheet" href="{% static 'css/inquiry.css' %}">
+    <link rel="stylesheet" href="{% static 'css/psv.css' %}">
   {% endblock %}
 </head>
 <body>
@@ -20,33 +19,35 @@
       {% bootstrap_messages message %}
     {% endfor %}
   {% endif %}
-  <h1>Inquiry</h1>
+    <h1>PSV Quotation Inquiry</h1>
+    
     <div class="container-fluid">
-        <form class="form" action="{%url 'inquiry'%}" method="post">
+
+        <form class="form" action="{%url 'psv'%}" method="post">
           {%csrf_token%}
-          
-          {% bootstrap_form letterForm exclude="cover_type" layout='inline'  %}
+      
+          {% bootstrap_form letterForm exclude="cover_type,YOM" layout='inline' %}
           {{ letterForm.cover_type }}
+          {{ letterForm.YOM }}
           <div class="sub">
             <input type="submit" value="Submit" class="btn btn-primary btn-sm btn-block rounded-circle">
           </div>
-          
         </form>
-      
-    </div>
-    <div class="footer">
-      <div class="quick-link">
-        <h2>QUICK LINK</h2>
-        <p>Home | General Liability | Education | Medical | Fire | All Risk | Electrical | Personal Accident | Personal Indemnity | Contractors All Risk | Money</p>
+        
       </div>
-      <div class="contact">
-        <h2>CONTACT</h2>
-        <p>Swing House, 3rd Floor Room 3</p>
-        <p>Madaraka Centre</p>
-        <p>P.0 Box 37874 - 00100 Nairobi</p>
-        <p>Mr. Sosten Kerich</p>
-        <p>+254 722725600</p>
+      <div class="footer">
+        <div class="quick-link">
+          <h2>QUICK LINK</h2>
+          <p>Home | General Liability | Education | Medical | Fire | All Risk | Electrical | Personal Accident | Personal Indemnity | Contractors All Risk | Money</p>
+        </div>
+        <div class="contact">
+          <h2>CONTACT</h2>
+          <p>Swing House, 3rd Floor Room 3</p>
+          <p>Madaraka Centre</p>
+          <p>P.0 Box 37874 - 00100 Nairobi</p>
+          <p>Mr. Sosten Kerich</p>
+          <p>+254 722725600</p>
+        </div>
       </div>
-    </div>
 </body>
 </html>
