@@ -598,7 +598,7 @@ a {
     margin-right: 5em;
   }
   .nav .stack img {
-    height: 1.5em;
+    height: 1em;
   }
   .nav .menu {
     left: 25%;
@@ -607,7 +607,7 @@ a {
     font-size: 35px;
   }
   .hero h1 {
-    font-size: 45px;
+    font-size: 40px;
     -ms-grid-column: 2;
     -ms-grid-column-span: 7;
     grid-column: 2/9;
@@ -626,12 +626,12 @@ a {
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
     grid-column: 5/8;
-    top: 10%;
+    top: 2%;
     left: 17%;
   }
   .hero .arrow {
     height: 1.5em;
-    top: -4em;
+    top: -2em;
     left: -7em;
   }
   .about {
