@@ -667,7 +667,7 @@ a {
     height: 2.2em;
   }
   .nav .stack img {
-    height: 1.2em;
+    height: 1em;
   }
   .nav .menu {
     font-size: 18px;
@@ -676,28 +676,28 @@ a {
     overflow: hidden;
     height: 100vh;
     margin-top: 0%;
-    font-size: 25px;
+    font-size: 22px;
   }
   .hero .girl {
     position: absolute;
-    top: -2.1em;
+    top: -3.5em;
     -ms-grid-column: 7;
     -ms-grid-column-span: 2;
     grid-column: 7/9;
   }
   .hero .arrow {
-    top: -5em;
+    top: -8em;
     left: -4em;
   }
   .hero h1 {
     position: relative;
-    top: -5%;
+    top: -7%;
     left: -4em;
     font-size: 30px;
   }
   .hero p {
     position: relative;
-    top: -9em;
+    top: -8em;
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-column: 1/7;

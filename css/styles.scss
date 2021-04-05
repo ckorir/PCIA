@@ -735,7 +735,7 @@
 
         .stack{
             img{
-                height: 1.2em;
+                height: 1em;
             }
         }
         .menu{
@@ -747,29 +747,29 @@
         overflow: hidden;
         height: 100vh;
         margin-top: 0%;
-        font-size: 25px;
+        font-size: 22px;
 
         .girl{
             position: absolute;
-            top: -2.1em;
+            top: -3.5em;
             grid-column: 7/9;
         }
 
         .arrow{
-            top: -5em;
+            top: -8em;
             left: -4em;
         }
 
         h1{
             position: relative;
-            top: -5%;
+            top: -7%;
             left: -4em;
             font-size: 30px;
         }
 
         p{
             position: relative;
-            top: -9em;
+            top: -8em;
             grid-column: 1/7;
         }
     }
