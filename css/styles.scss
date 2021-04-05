@@ -724,7 +724,7 @@
 
 //laptop
 
-@media only screen and (min-width: 1030px){
+@media only screen and (min-width: 1026px){
     .nav{
         padding: 4px;
 
@@ -838,8 +838,9 @@
 
     .home{
         .footer{
-            font-size: 16px;
+            font-size: 15px;
             top: 310%;
+            padding-bottom: 2em;
         }
     }
 
@@ -855,7 +856,7 @@
         }
 
         .footer2{
-            font-size: 16px;
+            font-size: 15px;
             padding: 22px;
 
             .links{
@@ -1019,7 +1020,6 @@
 @media only screen and (min-width: 1650px){
     .hero{
         .girl{
-            //display: none;
             top: -90%;
         }
     }

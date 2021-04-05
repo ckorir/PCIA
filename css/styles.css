@@ -661,7 +661,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 1030px) {
+@media only screen and (min-width: 1026px) {
   .nav {
     padding: 4px;
   }
@@ -766,8 +766,9 @@ a {
     width: 140%;
   }
   .home .footer {
-    font-size: 16px;
+    font-size: 15px;
     top: 310%;
+    padding-bottom: 2em;
   }
   .pages {
     font-size: 20px;
@@ -779,7 +780,7 @@ a {
     margin-top: 10%;
   }
   .pages .footer2 {
-    font-size: 16px;
+    font-size: 15px;
     padding: 22px;
   }
   .pages .footer2 .links a {
