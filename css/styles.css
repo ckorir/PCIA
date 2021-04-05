@@ -837,7 +837,7 @@ a {
 
 @media only screen and (min-width: 1200px) {
   .hero .girl {
-    top: -95%;
+    top: -80%;
   }
   .hero h1 {
     top: -3em;
