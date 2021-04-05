@@ -830,8 +830,8 @@ a {
     -ms-grid-column: 5;
     grid-column: 5;
   }
-  .home .footer2 {
-    top: 220%;
+  .home .footer {
+    top: 240%;
   }
 }
 
