@@ -580,7 +580,7 @@ a {
   }
 }
 
-@media (min-height: 800px) and (min-width: 1024px) {
+@media (min-height: 500px) and (min-width: 1024px) {
   .home {
     font-size: 25px;
   }
