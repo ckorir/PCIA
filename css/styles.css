@@ -680,7 +680,7 @@ a {
   }
   .hero .girl {
     position: absolute;
-    top: -3.5em;
+    top: -8.5em;
     -ms-grid-column: 7;
     -ms-grid-column-span: 2;
     grid-column: 7/9;
@@ -697,34 +697,35 @@ a {
   }
   .hero p {
     position: relative;
-    top: -8em;
+    top: -10em;
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-column: 1/7;
   }
   .about {
-    font-size: 20px;
+    font-size: 18px;
   }
   .about .cards {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    font-size: 17px;
-  }
-  .about .cards .card2 {
-    margin-top: 3em;
+    font-size: 15px;
+    margin-top: 1em;
+    /*  .card2{
+                margin-top: 3em;
+            } */
   }
   .principles {
     top: 180%;
-    font-size: 20px;
+    font-size: 18px;
   }
   .principles h1 {
     margin-left: -12%;
   }
   .principles .circleposition {
     width: 100vw;
-    margin-left: 4em;
+    margin-left: 7em;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[12];
@@ -764,7 +765,7 @@ a {
   }
   .home .footer {
     font-size: 16px;
-    top: 290%;
+    top: 310%;
   }
   .pages {
     font-size: 20px;

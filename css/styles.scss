@@ -751,7 +751,7 @@
 
         .girl{
             position: absolute;
-            top: -3.5em;
+            top: -8.5em;
             grid-column: 7/9;
         }
 
@@ -769,28 +769,29 @@
 
         p{
             position: relative;
-            top: -8em;
+            top: -10em;
             grid-column: 1/7;
         }
     }
 
     .about{
-        font-size: 20px;
+        font-size: 18px;
 
         .cards{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            font-size: 17px;
+            font-size: 15px;
+            margin-top: 1em;
 
-            .card2{
+          /*  .card2{
                 margin-top: 3em;
-            }
+            } */
         }
     }
 
     .principles{
         top: 180%;
-        font-size: 20px;
+        font-size: 18px;
 
         h1{
             margin-left: -12%;
@@ -798,7 +799,7 @@
 
         .circleposition{
             width: 100vw;
-            margin-left: 4em;
+            margin-left: 7em;
             display: grid;
             grid-template-columns: repeat(12,1fr);
             gap: 2.5em;
@@ -837,7 +838,7 @@
     .home{
         .footer{
             font-size: 16px;
-            top: 290%;
+            top: 310%;
         }
     }
 
