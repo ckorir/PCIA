@@ -793,13 +793,9 @@ a {
   }
   .principles {
     overflow: hidden;
-    width: 96%;
-  }
-  .principles h1 {
-    margin-left: 2%;
   }
   .principles .circle {
-    margin-left: 15%;
+    margin-left: 30%;
   }
 }
 
@@ -821,14 +817,14 @@ a {
     overflow: hidden;
   }
   .principles h1 {
-    margin-left: -7em;
+    margin-left: -5em;
   }
   .principles .circle {
-    margin-left: 20%;
+    margin-left: 45%;
   }
 }
 
-@media (max-width: 1900px) and (min-width: 1500px) {
+@media (max-width: 2000px) and (min-width: 1500px) {
   .hero h1 {
     top: -30%;
     left: -15%;
@@ -844,9 +840,10 @@ a {
     top: -75%;
   }
   .principles h1 {
-    margin-left: -16%;
+    margin-left: -6%;
   }
   .principles .circle {
+    margin-left: 15%;
     font-size: 16px;
   }
   .principles .circleposition {
