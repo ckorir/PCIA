@@ -785,7 +785,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 1124px) {
+@media only screen and (min-width: 1130px) {
   .hero .girl {
     top: -60%;
   }
@@ -811,13 +811,13 @@ a {
 
 @media only screen and (min-width: 1340px) {
   .hero .girl {
-    top: -50%;
+    top: -65%;
   }
   .hero h1 {
-    top: -2em;
+    top: -3em;
   }
   .hero p {
-    top: -12em;
+    top: -13em;
   }
   .hero .arrow {
     height: 1.5em;
@@ -827,7 +827,7 @@ a {
     overflow: hidden;
   }
   .principles h1 {
-    margin-left: -5em;
+    margin-left: -3em;
   }
   .principles .circle {
     margin-left: 45%;
