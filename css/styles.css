@@ -835,7 +835,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 1340px) {
+@media only screen and (min-width: 1200px) {
   .hero .girl {
     top: -95%;
   }
@@ -843,11 +843,11 @@ a {
     top: -3em;
   }
   .hero p {
-    top: -13em;
+    top: -14.2em;
   }
   .hero .arrow {
     height: 1.5em;
-    top: -8em;
+    top: -10em;
   }
   .principles {
     overflow: hidden;
