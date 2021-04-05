@@ -712,9 +712,9 @@ a {
         grid-template-columns: 1fr 1fr;
     font-size: 15px;
     margin-top: 1em;
-    /*  .card2{
-                margin-top: 3em;
-            } */
+  }
+  .about .cards .card2 {
+    margin-top: 1em;
   }
   .principles {
     top: 180%;
