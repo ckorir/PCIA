@@ -65,6 +65,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .nav .logo img {
@@ -827,7 +829,7 @@ a {
     overflow: hidden;
   }
   .principles h1 {
-    margin-left: -3em;
+    margin-left: -4em;
   }
   .principles .circle {
     margin-left: 45%;
