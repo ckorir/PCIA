@@ -626,7 +626,7 @@
 
 //Ipad pro
 
-@media(min-height: 800px) and (min-width: 1024px){
+@media(min-height: 500px) and (min-width: 1024px){
 
     .home{
         font-size: 25px;
@@ -881,10 +881,6 @@
     .principles{
         overflow: hidden;
        // width: 96%;
-
-        h1{
-         //   margin-left: 1%;
-        }
 
         .circle{
             margin-left: 30%;
