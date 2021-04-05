@@ -818,7 +818,7 @@ a {
     top: -8em;
   }
   .principles {
-    width: 120%;
+    overflow: hidden;
   }
   .principles h1 {
     margin-left: -7em;
