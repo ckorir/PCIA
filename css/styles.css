@@ -830,6 +830,9 @@ a {
     -ms-grid-column: 5;
     grid-column: 5;
   }
+  .home .footer2 {
+    top: 300%;
+  }
 }
 
 @media only screen and (min-width: 1340px) {
