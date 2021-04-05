@@ -785,18 +785,18 @@ a {
   }
 }
 
-@media only screen and (min-width: 1164px) {
+@media only screen and (min-width: 1124px) {
   .hero .girl {
-    top: -50%;
+    top: -60%;
   }
   .hero .arrow {
     top: -9em;
   }
   .hero h1 {
-    top: -9%;
+    top: -11%;
   }
   .hero p {
-    top: -12em;
+    top: -14em;
   }
   .about {
     padding-top: 1em;
