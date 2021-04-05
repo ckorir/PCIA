@@ -785,12 +785,21 @@ a {
   }
 }
 
-@media only screen and (min-width: 1184px) {
+@media only screen and (min-width: 1164px) {
   .hero .girl {
-    top: -30%;
+    top: -50%;
   }
   .hero .arrow {
-    top: -7em;
+    top: -9em;
+  }
+  .hero h1 {
+    top: -9%;
+  }
+  .hero p {
+    top: -12em;
+  }
+  .about {
+    padding-top: 1em;
   }
   .principles {
     overflow: hidden;

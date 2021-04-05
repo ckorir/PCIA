@@ -868,15 +868,27 @@
 
 //laptop
 
-@media only screen and (min-width: 1184px){
+@media only screen and (min-width: 1164px){
     .hero{
         .girl{
-            top: -30%;
+            top: -50%;
         }
 
         .arrow{
-            top: -7em;
+            top: -9em;
         }
+
+        h1{
+            top: -9%;
+        }
+
+        p{
+            top: -12em;
+        }
+    }
+
+    .about{
+        padding-top: 1em;
     }
 
     .principles{
