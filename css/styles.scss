@@ -893,13 +893,30 @@
     }
 
     .principles{
-        overflow: hidden;
-       // width: 96%;
-
-        .circle{
-            margin-left: 30%;
+        // font-size: 2px;
+        h1{
+            margin-left: -6%;
         }
-    }
+       .circle{
+           margin-left: 15%;
+           font-size: 16px;
+       }
+ 
+       .circleposition{
+           justify-content: space-around;
+         .c3{
+           left: -5%;
+           grid-row: 1;
+           grid-column: 4;
+         }
+         .c4{
+             left: -5%;
+             grid-row: 1;
+             grid-column: 5;
+         }
+       }
+       
+     }
 }
 
 @media only screen and (min-width: 1340px){
