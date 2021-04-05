@@ -774,12 +774,13 @@ a {
     font-size: 20px;
   }
   .pages .info {
-    top: -15%;
+    top: -18%;
   }
   .pages .info p {
     margin-top: 10%;
   }
   .pages .footer2 {
+    bottom: -12%;
     font-size: 15px;
     padding: 22px;
   }
