@@ -793,6 +793,7 @@ a {
   }
   .hero .arrow {
     top: -9em;
+    left: -2em;
   }
   .hero h1 {
     top: -11%;
@@ -860,7 +861,7 @@ a {
   }
 }
 
-@media (max-width: 2000px) and (min-width: 1500px) {
+@media (max-width: 2000px) and (min-width: 1300px) {
   .hero h1 {
     top: -30%;
     left: -15%;
@@ -873,7 +874,7 @@ a {
     left: -78%;
   }
   .hero .girl {
-    top: -75%;
+    top: -95%;
   }
   .principles h1 {
     margin-left: -6%;
