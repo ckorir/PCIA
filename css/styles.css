@@ -630,6 +630,7 @@ a {
     left: 17%;
   }
   .hero .arrow {
+    height: 1.5em;
     top: -4em;
     left: -7em;
   }
@@ -837,14 +838,13 @@ a {
   }
   .hero .arrow {
     top: -12em;
+    left: -78%;
   }
   .hero .girl {
     top: -75%;
   }
   .principles h1 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-left: -16%;
   }
   .principles .circle {
     font-size: 16px;
@@ -871,7 +871,26 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    top: 245%;
+    top: 240%;
+    padding: 14px;
+  }
+  .pages .info {
+    top: -25%;
+  }
+  .pages .footer2 {
+    top: -8%;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .hero .girl {
+    top: -90%;
+  }
+  .pages .info {
+    top: -30%;
+  }
+  .pages .footer2 {
+    top: -15%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

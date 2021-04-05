@@ -682,6 +682,7 @@
         }
 
         .arrow{
+            height: 1.5em;
             top: -4em;
             left: -7em;
         }
@@ -937,6 +938,7 @@
 
         .arrow{
             top: -12em;
+            left: -78%;
         }
 
         .girl{
@@ -946,7 +948,7 @@
     .principles{
        // font-size: 2px;
        h1{
-           justify-content: center;
+           margin-left: -16%;
        }
       .circle{
          // margin-left: -25%;
@@ -972,10 +974,41 @@
     .home{
         .footer{
             justify-content: space-between;
-            top: 245%;
+            top: 240%;
+            padding: 14px;
          //    margin-left: 10%;
         }
     }
+
+    .pages{
+        .info{
+            top: -25%;
+        }
+
+        .footer2{
+            top: -8%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1650px){
+    .hero{
+        .girl{
+            //display: none;
+            top: -90%;
+        }
+    }
+
+    .pages{
+        .info{
+            top: -30%;
+        }
+
+        .footer2{
+            top: -15%;
+        }
+    }
+
 }
 
 
