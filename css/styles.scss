@@ -900,6 +900,7 @@
        .circle{
            width: 52%;
            margin-left: 2%;
+           margin-right: 5%;
            font-size: 14px;
        }
  
@@ -917,7 +918,7 @@
          }
        }
        
-     }
+    }
 }
 
 @media only screen and (min-width: 1340px){
@@ -949,7 +950,7 @@
             margin-left: -4em;
         }
         .circle{
-            margin-left: 45%;
+            margin-left: 0%;
         }
     }
 }
@@ -984,19 +985,6 @@
           font-size: 16px;
       }
 
-      .circleposition{
-          justify-content: space-around;
-        .c3{
-          left: -5%;
-          grid-row: 1;
-          grid-column: 4;
-        }
-        .c4{
-            left: -5%;
-            grid-row: 1;
-            grid-column: 5;
-        }
-      }
       
     }
 

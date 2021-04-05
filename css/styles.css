@@ -809,6 +809,7 @@ a {
   .principles .circle {
     width: 52%;
     margin-left: 2%;
+    margin-right: 5%;
     font-size: 14px;
   }
   .principles .circleposition {
@@ -852,7 +853,7 @@ a {
     margin-left: -4em;
   }
   .principles .circle {
-    margin-left: 45%;
+    margin-left: 0%;
   }
 }
 
@@ -877,24 +878,6 @@ a {
   .principles .circle {
     margin-left: 15%;
     font-size: 16px;
-  }
-  .principles .circleposition {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .principles .circleposition .c3 {
-    left: -5%;
-    -ms-grid-row: 1;
-    grid-row: 1;
-    -ms-grid-column: 4;
-    grid-column: 4;
-  }
-  .principles .circleposition .c4 {
-    left: -5%;
-    -ms-grid-row: 1;
-    grid-row: 1;
-    -ms-grid-column: 5;
-    grid-column: 5;
   }
   .home .footer {
     -webkit-box-pack: justify;
