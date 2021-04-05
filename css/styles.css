@@ -876,20 +876,23 @@ a {
   .hero .girl {
     top: -98%;
   }
+  .principles {
+    /* .circle{
+          margin-left: 15%;
+          font-size: 16px;
+      } */
+  }
   .principles h1 {
     margin-left: -6%;
   }
-  .principles .circle {
-    margin-left: 15%;
-    font-size: 16px;
-  }
-  .home .footer {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
+  /* .home{
+        .footer{
             justify-content: space-between;
-    top: 240%;
-    padding: 14px;
-  }
+            top: 240%;
+            padding: 14px;
+         //    margin-left: 10%;
+        }
+    } */
   .pages .info {
     top: -25%;
   }
