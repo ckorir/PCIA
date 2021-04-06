@@ -155,7 +155,7 @@
             text-align: center;
             position: relative;
             width: 150%;
-            top: 70%;
+            top: 32%;
             left: 50%;
             transform: translate(-50%, -70%);
         }
@@ -909,6 +909,11 @@
  
        .circleposition{
            justify-content: space-around;
+           
+
+         .c2{
+             margin-left: 7%;
+         }
          .c3{
            left: -5%;
            grid-row: 1;
