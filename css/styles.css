@@ -218,10 +218,10 @@ a {
   text-align: center;
   position: relative;
   width: 150%;
-  top: 70%;
+  top: 32%;
   left: 50%;
-  -webkit-transform: translate(-50%, -70%);
-          transform: translate(-50%, -70%);
+  -webkit-transform: translate(-50%, -32%);
+          transform: translate(-50%, -32%);
 }
 
 .info {
@@ -534,7 +534,6 @@ a {
     left: 12%;
   }
   .principles .circle p {
-    top: 50%;
     width: 80%;
   }
   .pages {
@@ -661,7 +660,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 1026px) {
+@media only screen and (min-width: 1025px) {
   .nav {
     padding: 4px;
   }
@@ -762,7 +761,6 @@ a {
     margin-bottom: .1em;
   }
   .principles .circleposition .circle p {
-    top: 70%;
     width: 140%;
   }
   .home .footer {
@@ -780,7 +778,7 @@ a {
     margin-top: 10%;
   }
   .pages .footer2 {
-    bottom: 5%;
+    bottom: 7%;
     font-size: 15px;
     padding: 22px;
   }
@@ -818,6 +816,9 @@ a {
   .principles .circleposition {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .principles .circleposition .c2 {
+    margin-left: 7%;
   }
   .principles .circleposition .c3 {
     left: -5%;
@@ -861,6 +862,12 @@ a {
   .principles .circle {
     margin-left: 0%;
   }
+  .pages .info {
+    top: -21%;
+  }
+  .pages .footer2 {
+    bottom: 13%;
+  }
 }
 
 @media (max-width: 2000px) and (min-width: 1300px) {
@@ -878,28 +885,14 @@ a {
   .hero .girl {
     top: -98%;
   }
-  .principles {
-    /* .circle{
-          margin-left: 15%;
-          font-size: 16px;
-      } */
-  }
   .principles h1 {
     margin-left: -6%;
   }
-  /* .home{
-        .footer{
-            justify-content: space-between;
-            top: 240%;
-            padding: 14px;
-         //    margin-left: 10%;
-        }
-    } */
   .pages .info {
     top: -25%;
   }
   .pages .footer2 {
-    top: -8%;
+    top: 8%;
   }
 }
 
@@ -911,7 +904,7 @@ a {
     top: -30%;
   }
   .pages .footer2 {
-    top: -15%;
+    top: 15%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
