@@ -192,6 +192,7 @@ a {
 }
 
 .principles {
+  width: 100vw;
   background-color: var(--secondary);
   padding: 50px 20px;
   position: absolute;
@@ -863,7 +864,7 @@ a {
     margin-left: 0%;
   }
   .pages .info {
-    top: -21%;
+    top: -25%;
   }
   .pages .footer2 {
     bottom: 15%;
