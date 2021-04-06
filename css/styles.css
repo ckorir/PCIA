@@ -817,9 +817,6 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .principles .circleposition .c2 {
-    margin-left: 7%;
-  }
   .principles .circleposition .c3 {
     left: -5%;
     -ms-grid-row: 1;
