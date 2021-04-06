@@ -856,7 +856,7 @@
         }
 
         .footer2{
-            bottom: 6%;
+            bottom: 7%;
             font-size: 15px;
             padding: 22px;
 
@@ -962,6 +962,16 @@
             margin-left: 0%;
         }
     }
+
+    .pages{
+        .info{
+            top: -19%;
+        }
+        
+        .footer2{
+            bottom: 10%;
+        }
+    }
 }
 
 @media(max-width: 2000px) and (min-width: 1300px){
@@ -990,22 +1000,8 @@
        h1{
            margin-left: -6%;
        }
-     /* .circle{
-          margin-left: 15%;
-          font-size: 16px;
-      } */
 
-      
     }
-
-    /* .home{
-        .footer{
-            justify-content: space-between;
-            top: 240%;
-            padding: 14px;
-         //    margin-left: 10%;
-        }
-    } */
 
     .pages{
         .info{
@@ -1013,7 +1009,7 @@
         }
 
         .footer2{
-            top: -8%;
+            top: 8%;
         }
     }
 }
@@ -1031,10 +1027,8 @@
         }
 
         .footer2{
-            top: -15%;
+            top: 15%;
         }
     }
 
 }
-
-
