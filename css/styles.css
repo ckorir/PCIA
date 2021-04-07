@@ -241,6 +241,23 @@ a {
   padding: 10px 20px;
 }
 
+.info .requestslide {
+  position: relative;
+  top: 70%;
+  right: -5em;
+  float: right;
+}
+
+.info .requestslide img {
+  position: relative;
+  height: 3em;
+  right: 0em;
+}
+
+.info .requestslide img:hover {
+  right: 4em;
+}
+
 .inquiryform {
   position: relative;
   top: 15%;
@@ -315,6 +332,7 @@ a {
   position: relative;
   bottom: -21.3%;
   padding: 5%;
+  width: 100%;
 }
 
 .footer2 a {
