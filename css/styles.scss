@@ -167,7 +167,7 @@
     overflow-y: hidden;
 
     .info{
-        padding-top: 25%;
+        padding-top: 35%;
 
         h1{
             text-align: center;
@@ -418,7 +418,7 @@
         font-size: 12px;
 
         .info{
-            padding-top: 25%;
+            padding-top: 45%;
         }
     }
 
@@ -557,11 +557,14 @@
 
     .pages{
         font-size: 16px;
+
+        .footer2{
+            bottom: -45.1%;
+        }
+
     }
 
-    .footer2{
-        bottom: -23.1%;
-    }
+    
     
 }
 

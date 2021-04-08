@@ -229,7 +229,7 @@ a {
 }
 
 .pages .info {
-  padding-top: 25%;
+  padding-top: 35%;
 }
 
 .pages .info h1 {
@@ -436,7 +436,7 @@ a {
     font-size: 12px;
   }
   .pages .info {
-    padding-top: 25%;
+    padding-top: 45%;
   }
   .footer2 {
     font-size: 10px;
@@ -530,8 +530,8 @@ a {
   .pages {
     font-size: 16px;
   }
-  .footer2 {
-    bottom: -23.1%;
+  .pages .footer2 {
+    bottom: -45.1%;
   }
 }
 
