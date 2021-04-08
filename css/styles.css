@@ -389,8 +389,17 @@ a {
     top: 425%;
     left: 12%;
   }
+  .pages {
+    font-size: 13px;
+    /* .info{
+            padding-top: 35%;
+        } */
+  }
   .request {
     font-size: 11px;
+  }
+  .request .footer2 {
+    margin-top: 10%;
   }
 }
 
@@ -421,6 +430,15 @@ a {
     left: 12%;
     font-size: 11px;
   }
+  .pages {
+    font-size: 12px;
+  }
+  .pages .info {
+    padding-top: 45%;
+  }
+  .footer2 {
+    font-size: 10px;
+  }
   .request .footer2 {
     margin-top: 16%;
   }
@@ -449,8 +467,18 @@ a {
     position: relative;
     left: 8%;
   }
+  .pages {
+    font-size: 14px;
+    /*  .footer2{
+            font-size: 12px;
+            bottom: -35.9%;
+        } */
+  }
   .request {
     font-size: 12px;
+  }
+  .request .footer2 {
+    margin-top: 10%;
   }
 }
 
@@ -467,6 +495,9 @@ a {
     position: relative;
     left: 8%;
   }
+  /*  .footer2{
+        bottom: -40.8%;
+    } */
 }
 
 @media (min-height: 731px) and (min-width: 411px) {
@@ -477,6 +508,12 @@ a {
     left: 12%;
     top: 390%;
   }
+  .pages {
+    font-size: 16px;
+  }
+  /* .footer2{
+        bottom: -28%;
+    } */
 }
 
 @media (min-height: 812px) and (min-width: 375px) {
@@ -486,6 +523,12 @@ a {
   .home .footer {
     top: 368%;
     left: 7%;
+  }
+  .pages {
+    font-size: 16px;
+    /*  .footer2{
+            bottom: -45.1%;
+        } */
   }
 }
 
@@ -535,6 +578,11 @@ a {
   }
   .request {
     font-size: 20px;
+    /*   .footer2{
+            bottom: -8%;
+            padding-left: 8%;
+            text-align: center;
+        } */
   }
   .request .inquiryform {
     top: 10%;
@@ -609,6 +657,16 @@ a {
   }
   .principles {
     font-size: 27px;
+  }
+  .pages {
+    /* .info{
+            position: relative;
+            top: -5%;
+
+            p{
+                margin-left: 2%;
+            }
+        } */
   }
   .pages .footer2 .links a {
     font-size: 14px;
@@ -723,6 +781,19 @@ a {
     top: 310%;
     padding-bottom: 2em;
   }
+  .pages {
+    /* .footer2{
+            bottom: 7%;
+            font-size: 15px;
+            padding: 22px;
+
+            .links{
+                a{
+                    font-size: 16px;
+                }   
+            }
+        } */
+  }
   .pages .info p {
     margin-top: 10%;
   }
@@ -823,14 +894,48 @@ a {
   .principles h1 {
     margin-left: -6%;
   }
-  .pages .footer2 {
-    bottom: 16.5%;
-  }
 }
 
 @media only screen and (min-width: 1650px) {
   .hero .girl {
     top: -90%;
   }
+  .pages {
+    /* .footer2{
+            top: 15%;
+        } */
+  }
+  .pages .info {
+    top: -30%;
+  }
 }
+
+/*
+
+ @media only screen and (max-width: 8900px){
+    .pages{
+        .info{
+          //  position: fixed;
+            padding-top: 12%;
+            
+            p{
+                margin-top: 10%;
+            }
+        }
+        .footer2{
+            padding-top: 1em;
+            padding-bottom: 1em;
+            position: fixed;
+            bottom: 0%;
+
+            .links{
+                a{
+                    font-size: 16px;
+                }   
+            } 
+        }
+    }
+}
+
+*/
 /*# sourceMappingURL=styles.css.map */
