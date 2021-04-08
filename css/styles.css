@@ -390,9 +390,12 @@ a {
   .pages {
     font-size: 13px;
   }
+  .pages .info {
+    padding-top: 35%;
+  }
   .footer2 {
     font-size: 11px;
-    bottom: -40.5%;
+    bottom: -37.5%;
   }
   .request {
     font-size: 11px;
@@ -432,8 +435,12 @@ a {
   .pages {
     font-size: 12px;
   }
+  .pages .info {
+    padding-top: 25%;
+  }
   .footer2 {
     font-size: 10px;
+    bottom: -30%;
   }
   .request .footer2 {
     margin-top: 16%;
