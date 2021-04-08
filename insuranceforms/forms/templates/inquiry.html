@@ -6,29 +6,62 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" class="icon2" href="{% static "img/umbrella.png" %}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime Cover Insurance Agency</title>
+    <title>Inquiry</title>
     {% block styles %}
     {% bootstrap_css %}
     <link rel="stylesheet" href="{% static 'css/inquiry.css' %}">
   {% endblock %}
 </head>
 <body>
+  <div class="nav shadow-sm p-3 mb-5 bg-white rounded">
+    <div class="logo">
+        <a href="index.html"><img src="{% static "img/logo.png" %}" alt=""></img></a>
+    </div>
+    
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="#">Motor</a>
+        <a href="property.html">Property</a>
+        <a href="fire.html">Fire</a>
+        <a href="liability.html">Liability</a>
+        <a href="marine.html">Marine</a>
+        <a href="inquiry.html">Contact Us</a>
+    </div>
+
+    <input type="checkbox" id="toggle"/>
+    <label for="toggle" class="stack">
+      <img src="{% static "img/Burger.png" %}" alt=""></img>
+    </label>
+     
+</div><br><br><br><br>
+     
+
   {% if messages %}
     {% for message in messages %}
       {% bootstrap_javascript jquery=True %}
       {% bootstrap_messages message %}
     {% endfor %}
   {% endif %}
-  <h1>Inquiry</h1>
+  
+  <div class="hl">
+    <img class="icon3" style="float:left" src="{% static "img/info2.png" %}" alt=""></img><h1>Inquiry</h1>
+  </div>
+  <hr class="line">
     <div class="container-fluid">
         <form class="form" action="{%url 'inquiry'%}" method="post">
           {%csrf_token%}
-          
-          {% bootstrap_form letterForm exclude="cover_type" layout='inline'  %}
-          {{ letterForm.cover_type }}
+          {% bootstrap_form letterForm exclude="cover_type,subject,message" layout='inline'  %}
+          <div class="strong">
+            <strong>Cover Type</strong>
+          </div>
+          <div class="cover">
+            {% bootstrap_form letterForm exclude="first_name,last_name,phone_number,email,subject,message,location" layout='inline'  %}
+          </div>
+          {% bootstrap_form letterForm exclude="first_name,last_name,phone_number,email,cover_type,location," layout='inline'  %}
           <div class="sub">
-            <input type="submit" value="Submit" class="btn btn-primary btn-sm btn-block rounded-circle">
+            <input type="submit" value="Submit" class="btn btn-primary btn-sm btn-block ">
           </div>
           
         </form>
@@ -48,5 +81,6 @@
         <p>+254 722725600</p>
       </div>
     </div>
+    <script src="{% static 'js/scripts.js' %}"></script>
 </body>
 </html>

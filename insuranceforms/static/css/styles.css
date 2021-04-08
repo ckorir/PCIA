@@ -1,0 +1,877 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'monts';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[9];
+      grid-template-columns: repeat(9, 1fr);
+}
+
+.grid2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+@font-face {
+  font-family: 'montslight';
+  src: url("/fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: 'montsmedium';
+  src: url("/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'monts';
+  src: url("/fonts/Montserrat-Regular.ttf");
+}
+
+:root {
+  --primary: #D2CACA;
+  --secondary: #152966;
+  --foot: #1C264B;
+  --circle: #9299FF;
+}
+
+.nav {
+  position: fixed;
+  z-index: 1;
+  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 68px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav .logo img {
+  margin-right: 2em;
+  left: 20%;
+  top: -2%;
+  position: relative;
+  height: 2.5em;
+}
+
+.nav .menu {
+  text-align: center;
+  margin-right: 3em;
+}
+
+.nav .menu a {
+  color: rgba(0, 0, 0, 0.89);
+  margin-left: 1.5em;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav #toggle {
+  float: right;
+  display: none;
+}
+
+.nav label {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  float: right;
+  margin-right: 45px;
+}
+
+.hero {
+  height: 100vh;
+  background-color: var(--secondary);
+  position: absolute;
+  top: 8%;
+}
+
+.hero h1 {
+  padding-top: 25%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 7;
+  grid-column: 2/9;
+  color: var(--primary);
+  text-align: center;
+}
+
+.hero p {
+  position: relative;
+  top: -10%;
+  text-align: center;
+  margin-left: 10%;
+  color: var(--primary);
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.hero .arrow {
+  position: relative;
+  left: 30%;
+  -ms-grid-column: 5;
+  grid-column: 5;
+  bottom: 3em;
+}
+
+.hero .girl {
+  display: none;
+  width: 150%;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-column: 4/8;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.about {
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  padding-top: 5%;
+}
+
+.about p {
+  padding: 0 5%;
+}
+
+.about h1 {
+  text-align: center;
+}
+
+.about hr {
+  width: 35%;
+  margin-bottom: 1.5em;
+}
+
+.about .card1, .about .card2 {
+  margin-bottom: 3em;
+  background-color: #F9F9F9;
+  padding: 20px 35px;
+  margin-left: 5.5%;
+  width: 70%;
+  border: solid 1px rgba(0, 0, 0, 0.068);
+  border-radius: 2em;
+}
+
+.about .card1 h1, .about .card2 h1 {
+  text-align: center;
+}
+
+.about .card1 p, .about .card2 p {
+  padding: 0;
+}
+
+.about .card1 {
+  margin-top: 3em;
+}
+
+.principles {
+  background-color: var(--secondary);
+  padding: 50px 20px;
+  position: absolute;
+  top: 220%;
+  color: white;
+}
+
+.principles h1 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.principles .circle {
+  padding: 90px;
+  height: 70px;
+  background-color: var(--circle);
+  border-radius: 70%;
+  margin-bottom: 2em;
+}
+
+.principles .circle p {
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: center;
+  position: relative;
+  width: 150%;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
+}
+
+.info {
+  padding-top: 25%;
+}
+
+.info h1 {
+  text-align: center;
+}
+
+.info hr {
+  width: 80%;
+}
+
+.info p {
+  padding: 10px 20px;
+}
+
+.inquiryform {
+  position: relative;
+  top: 15%;
+}
+
+.inquiryform h1 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.inquiryform form {
+  width: 100%;
+}
+
+.inquiryform form input, .inquiryform form textarea {
+  padding: 15px;
+  border-radius: 7px;
+  background-color: rgba(212, 226, 236, 0.411);
+  text-align: left;
+  border: thin;
+  margin-left: 6%;
+  width: 80%;
+}
+
+.inquiryform form input {
+  margin-bottom: 10px;
+}
+
+.inquiryform form textarea {
+  resize: none;
+  padding: 30px 15px;
+}
+
+.inquiryform form button {
+  background-color: #5772B0;
+  margin: 4% 0 5% 6%;
+  left: 0.1em;
+  width: 88%;
+  padding: 10px 0px;
+  border-radius: 16px;
+  border: none;
+  color: rgba(255, 255, 255, 0.788);
+  font-weight: 400;
+  font-size: 0.7em;
+}
+
+.inquiryform form button:hover {
+  background-color: #4a66b6c7;
+}
+
+.home .footer {
+  position: absolute;
+  top: 420%;
+  right: 20%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.home .footer .links {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.home .footer .contact {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.footer2 {
+  background-color: var(--foot);
+  color: white;
+  position: relative;
+  bottom: -21.3%;
+  padding: 5%;
+}
+
+.footer2 a {
+  color: white;
+}
+
+@media only screen and (max-width: 1040px) {
+  .nav label {
+    display: block;
+  }
+  .nav .menu {
+    display: none;
+    top: 12em;
+    left: 7.45em;
+    position: relative;
+    text-align: center;
+    width: 60%;
+  }
+  .nav .menu a {
+    background-color: white;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .nav {
+    font-size: 12px;
+  }
+  .nav .menu {
+    position: absolute;
+    left: 40%;
+    top: 85%;
+  }
+  .hero {
+    font-size: 12px;
+  }
+  .hero .arrow {
+    height: 2em;
+  }
+  .about {
+    font-size: 12px;
+  }
+  .principles {
+    font-size: 12px;
+    top: 225%;
+  }
+  .home .footer {
+    font-size: 11px;
+    position: absolute;
+    top: 425%;
+    left: 12%;
+  }
+  .pages {
+    font-size: 13px;
+  }
+  .footer2 {
+    font-size: 11px;
+    bottom: -14.5%;
+  }
+  .request {
+    font-size: 11px;
+  }
+  .request .footer2 {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .hero {
+    height: 150vh;
+    font-size: 12px;
+  }
+  .hero p {
+    position: relative;
+    top: -30%;
+  }
+  .hero .arrow {
+    position: relative;
+    top: -100%;
+    height: 2em;
+  }
+  .about {
+    font-size: 12px;
+  }
+  .principles {
+    top: 230%;
+    font-size: 12px;
+  }
+  .home .footer {
+    position: absolute;
+    top: 455%;
+    left: 12%;
+    font-size: 11px;
+  }
+  .pages {
+    font-size: 12px;
+  }
+  .footer2 {
+    font-size: 10px;
+    bottom: -8.5%;
+  }
+  .request .footer2 {
+    margin-top: 16%;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+  .arrow {
+    height: 2em;
+  }
+  .principles {
+    top: 225%;
+  }
+  .footer {
+    font-size: 12px;
+    top: 423%;
+    left: 8%;
+  }
+  .footer p {
+    position: relative;
+    left: 9%;
+  }
+  .footer h1 {
+    position: relative;
+    left: 8%;
+  }
+  .pages {
+    font-size: 14px;
+  }
+  .footer2 {
+    font-size: 12px;
+    bottom: -8.9%;
+  }
+  .request {
+    font-size: 12px;
+  }
+  .request .footer2 {
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 414px) {
+  .home .footer {
+    position: absolute;
+    top: 405%;
+  }
+  .home .footer p {
+    position: relative;
+    left: 7%;
+  }
+  .home .footer h1 {
+    position: relative;
+    left: 8%;
+  }
+  .footer2 {
+    bottom: -40.8%;
+  }
+}
+
+@media (min-height: 731px) and (min-width: 411px) {
+  .principles {
+    top: 210%;
+  }
+  .home .footer {
+    left: 12%;
+    top: 390%;
+  }
+  .pages {
+    font-size: 16px;
+  }
+  .footer2 {
+    bottom: -12%;
+  }
+}
+
+@media (min-height: 812px) and (min-width: 375px) {
+  .principles {
+    top: 205%;
+  }
+  .home .footer {
+    top: 368%;
+    left: 7%;
+  }
+  .pages {
+    font-size: 16px;
+  }
+  .footer2 {
+    bottom: -20.1%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+  .nav .menu {
+    top: 12em;
+  }
+  .nav .menu a {
+    height: 2em;
+  }
+  .about {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .about .card1, .about .card2 {
+    margin-left: 10%;
+  }
+  .principles .circle {
+    position: relative;
+    width: 50%;
+    padding: 5em;
+    height: 120px;
+    left: 12%;
+  }
+  .principles .circle p {
+    top: 50%;
+    width: 80%;
+  }
+  .pages {
+    font-size: 20px;
+  }
+  .pages .info {
+    padding-right: 6em;
+  }
+  .pages .info h1 {
+    text-align: left;
+    margin-left: 5%;
+  }
+  .pages .info hr {
+    float: left;
+    margin-left: 5%;
+  }
+  .pages .info p {
+    margin-top: 15%;
+  }
+  .pages .footer2 {
+    text-align: center;
+    padding: 5em;
+    font-size: 15px;
+    bottom: -11.5%;
+  }
+  .request {
+    font-size: 20px;
+  }
+  .request .inquiryform {
+    top: 10%;
+  }
+  .request .inquiryform form input {
+    margin-bottom: 2%;
+  }
+  .request .inquiryform form button {
+    width: 84%;
+  }
+  .request .footer2 {
+    bottom: -8%;
+    padding-left: 8%;
+    text-align: center;
+  }
+  .footer {
+    font-size: 17px;
+  }
+}
+
+@media (min-height: 800px) and (min-width: 1024px) {
+  .home {
+    font-size: 25px;
+  }
+  .home .footer {
+    font-size: 23px;
+    top: 356%;
+  }
+  .nav {
+    padding: 20px;
+  }
+  .nav .logo img {
+    height: 3.2em;
+  }
+  .nav .stack {
+    margin-right: 5em;
+  }
+  .nav .stack img {
+    height: 1.5em;
+  }
+  .nav .menu {
+    left: 25%;
+  }
+  .hero {
+    font-size: 35px;
+  }
+  .hero h1 {
+    font-size: 45px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 7;
+    grid-column: 2/9;
+  }
+  .hero p {
+    margin-top: 35%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .hero .girl {
+    position: relative;
+    display: block;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-column: 5/8;
+    top: 10%;
+    left: 17%;
+  }
+  .hero .arrow {
+    top: -4em;
+    left: -7em;
+  }
+  .about {
+    font-size: 27px;
+  }
+  .principles {
+    font-size: 27px;
+  }
+  .pages {
+    font-size: 30px;
+  }
+  .pages .info {
+    position: relative;
+    top: -5%;
+  }
+  .pages .info p {
+    margin-left: 2%;
+  }
+  .pages .footer2 {
+    font-size: 20px;
+    bottom: -5%;
+  }
+  .pages .footer2 .links a {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  .nav {
+    padding: 4px;
+  }
+  .nav .logo img {
+    height: 2.2em;
+  }
+  .nav .stack img {
+    height: 1.2em;
+  }
+  .nav .menu {
+    font-size: 18px;
+  }
+  .hero {
+    overflow: hidden;
+    height: 100vh;
+    margin-top: 0%;
+    font-size: 25px;
+  }
+  .hero .girl {
+    position: absolute;
+    top: -2.1em;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2;
+    grid-column: 7/9;
+  }
+  .hero .arrow {
+    top: -5em;
+    left: -4em;
+  }
+  .hero h1 {
+    position: relative;
+    top: -5%;
+    left: -4em;
+    font-size: 30px;
+  }
+  .hero p {
+    position: relative;
+    top: -9em;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
+  .about {
+    font-size: 20px;
+  }
+  .about .cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    font-size: 17px;
+  }
+  .about .cards .card2 {
+    margin-top: 3em;
+  }
+  .principles {
+    top: 180%;
+    font-size: 20px;
+  }
+  .principles h1 {
+    margin-left: -12%;
+  }
+  .principles .circleposition {
+    width: 100vw;
+    margin-left: 4em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    gap: 2.5em;
+  }
+  .principles .circleposition .c1 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .principles .circleposition .c2 {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .principles .circleposition .c3 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .principles .circleposition .c4 {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .principles .circleposition .circle {
+    margin-bottom: .1em;
+  }
+  .principles .circleposition .circle p {
+    top: 70%;
+    width: 140%;
+  }
+  .home .footer {
+    font-size: 16px;
+    top: 290%;
+  }
+  .pages {
+    font-size: 20px;
+  }
+  .pages .info {
+    top: -15%;
+  }
+  .pages .info p {
+    margin-top: 10%;
+  }
+  .pages .footer2 {
+    font-size: 16px;
+    padding: 22px;
+  }
+  .pages .footer2 .links a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1184px) {
+  .hero .girl {
+    top: -30%;
+  }
+  .hero .arrow {
+    top: -7em;
+  }
+  .principles {
+    overflow: hidden;
+    width: 96%;
+  }
+  .principles h1 {
+    margin-left: 2%;
+  }
+  .principles .circle {
+    margin-left: 15%;
+  }
+}
+
+@media only screen and (min-width: 1340px) {
+  .hero .girl {
+    top: -50%;
+  }
+  .hero h1 {
+    top: -2em;
+  }
+  .hero p {
+    top: -12em;
+  }
+  .hero .arrow {
+    height: 1.5em;
+    top: -8em;
+  }
+  .principles {
+    width: 120%;
+  }
+  .principles h1 {
+    margin-left: -7em;
+  }
+  .principles .circle {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 1900px) and (min-width: 1500px) {
+  .hero h1 {
+    top: -30%;
+    left: -15%;
+  }
+  .hero P {
+    top: -80%;
+  }
+  .hero .arrow {
+    top: -12em;
+  }
+  .hero .girl {
+    top: -75%;
+  }
+  .principles h1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .principles .circle {
+    font-size: 16px;
+  }
+  .principles .circleposition {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .principles .circleposition .c3 {
+    left: -5%;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 4;
+    grid-column: 4;
+  }
+  .principles .circleposition .c4 {
+    left: -5%;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 5;
+    grid-column: 5;
+  }
+  .home .footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    top: 245%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

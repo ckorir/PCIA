@@ -1,0 +1,981 @@
+@import './globals';
+@import './variables';
+
+.nav{
+  position: fixed;
+  z-index: 1;  
+  top: 0%;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 68px;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo{
+      img{
+          margin-right: 2em;
+          left: 20%;
+          top: -2%;
+          position: relative;
+          height: 2.5em;
+      }
+  }
+
+  .menu{
+    text-align: center;
+    margin-right: 3em;
+      a{
+          color: rgba(0, 0, 0, 0.89);
+          margin-left: 1.5em;
+          text-decoration: none;
+          padding: 10px;
+      }
+  }
+
+  #toggle{
+      float: right;
+      display: none;
+  }
+
+  label{  
+      display: none;
+      cursor: pointer;
+      position: relative;
+      float: right;
+      margin-right: 45px;
+  }
+}
+
+.hero{
+    height: 100vh;
+    background-color: var(--secondary);
+    position: absolute;
+    top: 8%;
+
+    h1{
+        padding-top: 25%;
+        grid-column: 2/9;
+        color: var(--primary);
+        text-align: center;
+    }
+
+    p{
+        position: relative;
+        top: -10%;
+        text-align: center;
+        margin-left: 10%;
+        color: var(--primary);
+        grid-column: 1/9;
+        grid-row: 2;
+    }
+
+    .arrow{
+        position: relative;
+        left: 30%;
+        grid-column: 5;
+        bottom: 3em;
+    }
+
+    .girl{
+        display: none;
+        width: 150%;
+        grid-column: 4/8;
+        grid-row: 2;
+    }
+}
+
+.about{
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    padding-top: 5%;
+
+    p{
+        padding: 0 5%;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    hr{
+        width: 35%;
+        margin-bottom: 1.5em;
+    }
+
+    .card1, .card2{
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            padding: 0;
+        }
+
+        margin-bottom: 3em;
+        background-color: #F9F9F9;
+        padding: 20px 35px;
+        margin-left: 5.5%;
+        width: 70%;
+        border: solid 1px rgba(0, 0, 0, 0.068);
+        border-radius: 2em;
+    }
+
+    .card1{
+        margin-top: 3em;
+    }
+
+}
+
+.principles{
+    background-color: var(--secondary);
+    padding: 50px 20px;
+    position: absolute;
+    top :220%;
+    color: white;
+
+    h1{
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .circle{
+        padding: 90px;
+        height: 70px;
+        background-color: var(--circle);
+        border-radius: 70%;
+        margin-bottom: 2em;
+
+        p{
+            padding-right: 5px;
+            padding-left: 5px;
+            text-align: center;
+            position: relative;
+            width: 150%;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -70%);
+        }
+    }
+
+}
+
+.info{
+    padding-top: 25%;
+
+    h1{
+        text-align: center;
+    }
+    hr{
+        width: 80%;
+    }
+    p{
+        //margin-top: 10%;
+        padding: 10px 20px;
+    }
+}
+
+.inquiryform{
+    position: relative;
+    top: 15%;
+
+    h1{
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    form{
+        // line-height: 5px;
+         width: 100%;
+     
+         input, textarea {
+             padding: 15px;   
+             border-radius: 7px;
+             background-color:  rgba(212, 226, 236, 0.411);
+             text-align: left;
+             border: thin;
+             margin-left: 6%;
+             width: 80%;
+         }
+     
+         input{
+             margin-bottom: 10px;   
+         }
+     
+         textarea {
+             resize: none;
+             padding: 30px 15px;
+         }
+     
+         button{
+             background-color: #5772B0;
+             margin: 4% 0 5% 6%;
+             left: 0.1em;
+             width: 88%;
+             padding: 10px 0px;
+             border-radius: 16px;
+             border: none;
+             color: rgba(255, 255, 255, 0.788);
+             font-weight: 400;
+             font-size: 0.7em;
+     
+             &:hover {
+                 background-color:#4a66b6c7;
+             }
+         }
+     }
+}
+
+.home{
+    .footer{
+        position: absolute;
+        top: 420%;
+        right: 20%;
+        text-align: center;
+        padding-bottom: 5%;
+
+        .links{
+            grid-column: 1;
+        }
+
+        .contact{
+            grid-column: 2;
+        }
+    }
+}
+
+.footer2{
+    background-color: var(--foot);
+    color: white;
+    position: relative;
+    bottom: -21.3%;
+    padding: 5%;
+
+    a{
+        color: white;
+    }
+
+}
+
+
+//Where Burger menu appears
+
+@media only screen and (max-width: 1040px){
+    .nav{
+        label{
+            display: block;
+        }
+
+        .menu{
+            display: none;
+            top: 12em;
+            left: 7.45em;
+            position: relative;
+            text-align: center;
+            width: 60%;
+
+            a{
+                background-color: white;
+                display: block;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+            }
+        }
+
+    }
+}
+
+// S5
+
+@media only screen and (max-width: 360px){
+    .nav{
+        font-size: 12px;
+        .menu{
+            position: absolute;
+            left: 40%;
+            top: 85%;
+        }
+    }
+
+    .hero{
+        font-size: 12px;
+
+        .arrow{
+            height: 2em;
+        }
+    }
+
+    .about{
+        font-size: 12px;
+    }
+
+    .principles{
+        font-size: 12px;
+        top: 225%;
+    }
+
+    .home{
+        .footer{
+            font-size: 11px;
+            position: absolute;
+            top: 425%;
+            left: 12%;
+        }
+    }
+
+    .pages{
+        font-size: 13px;
+    }
+
+    .footer2{
+        font-size: 11px;
+        bottom: -14.5%;
+    }
+
+    .request{
+        font-size: 11px;
+        .footer2{
+            margin-top: 10%;
+        }
+    }
+    
+
+}
+
+// Iphone 5
+
+@media only screen and (max-width: 320px){
+   
+    .hero{
+        height: 150vh;
+        font-size: 12px;
+
+        p{
+            position: relative;
+            top: -30%;
+        }
+        
+        .arrow{
+            position: relative;
+            top: -100%;
+            height: 2em;
+        }
+    }
+
+    .about{
+        font-size: 12px;
+    }
+
+    .principles{
+        top: 230%;
+        font-size: 12px;
+    }
+
+    .home{
+        .footer{
+            position: absolute;
+            top: 455%;
+            left: 12%;
+            font-size: 11px;
+        }
+    }
+    
+    .pages{
+        font-size: 12px;
+    }
+
+    .footer2{
+        font-size: 10px;
+        bottom: -8.5%;
+    }
+
+    .request{
+        .footer2{
+            margin-top: 16%;
+        }
+    }
+
+}
+
+
+
+// Iphone 6/7/8
+
+@media only screen and (min-width: 375px){
+
+    body{
+        font-size: 14px;
+    }
+
+    .arrow{
+        height: 2em;
+    }
+
+    .principles{
+        top: 225%;
+    }
+
+
+    .footer{
+        font-size: 12px;
+        top: 423%;
+        left: 8%;
+
+        p{
+            position: relative;
+            left: 9%;
+        }
+
+        h1{
+            position: relative;
+            left: 8%;
+        }
+        
+    }
+
+    .pages{
+        font-size: 14px;
+    }
+
+    .footer2{
+        font-size: 12px;
+        bottom: -8.9%;
+    }
+
+    .request{
+        font-size: 12px;
+        .footer2{
+            margin-top: 10%;
+        }
+    }
+    
+}
+
+// Iphone 6/7/8 Plus
+
+@media(min-width: 414px){
+    
+    .home{
+        .footer{
+            position: absolute;
+            top: 405%;
+            p{
+                position: relative;
+                left: 7%;
+            }
+
+            h1{
+                position: relative;
+                left: 8%;
+            }
+        }
+    }
+
+    .footer2{
+        bottom: -40.8%;
+    }
+    
+}
+
+// pixel 2
+
+@media(min-height: 731px) and (min-width: 411px){
+    .principles{
+        top: 210%;
+    }
+
+    .home{
+        .footer{
+        left: 12%;
+        top: 390%;
+        }
+    }
+
+    .pages{
+        font-size: 16px;
+    }
+
+    .footer2{
+        bottom: -12%;
+    }
+    
+}
+
+// Iphone X
+
+@media(min-height: 812px) and (min-width: 375px){
+    .principles{
+        top: 205%;
+    }
+
+    .home{
+        .footer{
+        top: 368%;
+        left: 7%;
+        }
+    }
+
+    .pages{
+        font-size: 16px;
+    }
+
+    .footer2{
+        bottom: -20.1%;
+    }
+    
+}
+
+//Ipad
+
+@media only screen and (min-width: 768px){
+
+    body{
+        font-size: 20px;
+    }
+
+    .nav{
+        .menu{
+            top: 12em;
+
+            a{
+                height: 2em;
+            }
+        }
+    }
+
+    .about{
+        padding-left: 60px;
+        padding-right: 60px;
+        .card1, .card2{
+            margin-left: 10%;
+        }
+    }
+
+    .principles{
+        .circle{
+            position: relative;
+            width: 50%;
+            padding: 5em;
+            height: 120px;
+            left: 12%;
+
+            p{
+                top: 50%;
+                width: 80%;
+            }
+        }
+    }
+
+    .pages{
+        font-size: 20px;
+
+        .info{
+            padding-right: 6em;
+
+            h1{
+                text-align: left;
+                margin-left: 5%;
+            }
+            hr{
+                float: left;
+                margin-left: 5%;
+            }
+            p{
+                margin-top: 15%;
+            }
+        }
+
+        .footer2{
+            text-align: center;
+            padding: 5em;
+            font-size: 15px;
+            bottom: -11.5%;
+        }
+    }
+
+    .request{
+        font-size: 20px;
+
+        .inquiryform{
+            top: 10%;
+
+            form{
+                input{
+                    margin-bottom: 2%;
+                }
+
+                button{
+                    width: 84%;
+                }
+            }
+        }
+
+        .footer2{
+            bottom: -8%;
+            padding-left: 8%;
+            text-align: center;
+        }
+    }
+
+    .footer{
+        font-size: 17px;
+    }
+    
+}
+
+//Ipad pro
+
+@media(min-height: 800px) and (min-width: 1024px){
+
+    .home{
+        font-size: 25px;
+
+        .footer{
+            font-size: 23px;
+            top: 356%;
+        }
+    }
+
+    .nav{
+        padding: 20px;
+
+        .logo{
+            img{
+                height: 3.2em;
+            }
+        }
+        
+        .stack{
+            margin-right: 5em;
+
+            img{
+                height: 1.5em;
+            }
+        }
+
+        .menu{
+            left: 25%;
+        }
+    }
+
+    .hero{ 
+        font-size: 35px;
+
+        h1{
+            font-size: 45px;
+            grid-column: 2/9;
+        }
+
+        p{
+            margin-top: 35%;
+            grid-column: 1/5;
+            grid-row: 2;
+        }
+
+        .girl{
+            position: relative;
+            display: block;
+            grid-column: 5/8;
+            top: 10%;
+            left: 17%;
+        }
+
+        .arrow{
+            top: -4em;
+            left: -7em;
+        }
+    }
+
+    .about{
+        font-size: 27px;
+    }
+
+    .principles{
+        font-size: 27px;
+    }
+
+    .pages{
+        font-size: 30px;
+        .info{
+            position: relative;
+            top: -5%;
+
+            p{
+                margin-left: 2%;
+            }
+        }
+
+        .footer2{
+            font-size:20px;
+            bottom: -5%;
+
+            .links{
+                a{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+}
+
+//laptop
+
+@media only screen and (min-width: 1030px){
+    .nav{
+        padding: 4px;
+
+        .logo{
+            img{
+                height: 2.2em;
+            }
+        }
+
+        .stack{
+            img{
+                height: 1.2em;
+            }
+        }
+        .menu{
+            font-size: 18px;
+        }
+    }
+
+    .hero{
+        overflow: hidden;
+        height: 100vh;
+        margin-top: 0%;
+        font-size: 25px;
+
+        .girl{
+            position: absolute;
+            top: -2.1em;
+            grid-column: 7/9;
+        }
+
+        .arrow{
+            top: -5em;
+            left: -4em;
+        }
+
+        h1{
+            position: relative;
+            top: -5%;
+            left: -4em;
+            font-size: 30px;
+        }
+
+        p{
+            position: relative;
+            top: -9em;
+            grid-column: 1/7;
+        }
+    }
+
+    .about{
+        font-size: 20px;
+
+        .cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            font-size: 17px;
+
+            .card2{
+                margin-top: 3em;
+            }
+        }
+    }
+
+    .principles{
+        top: 180%;
+        font-size: 20px;
+
+        h1{
+            margin-left: -12%;
+        }
+
+        .circleposition{
+            width: 100vw;
+            margin-left: 4em;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            gap: 2.5em;
+
+            .c1{
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            .c2{
+                grid-column: 2;
+                grid-row: 1;
+            }
+
+            .c3{
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            .c4{
+                grid-column: 2;
+                grid-row: 2;
+            }
+
+            .circle{
+                p{
+                    top: 70%;
+                    width: 140%;
+                }
+
+                margin-bottom: .1em;
+            }
+        }
+    }
+
+    .home{
+        .footer{
+            font-size: 16px;
+            top: 290%;
+        }
+    }
+
+    .pages{
+        font-size: 20px;
+
+        .info{
+            top: -15%;
+
+            p{
+                margin-top: 10%;
+            }
+        }
+
+        .footer2{
+            font-size: 16px;
+            padding: 22px;
+
+            .links{
+                a{
+                    font-size: 16px;
+                }   
+            }
+        }
+    }
+}
+
+//laptop
+
+@media only screen and (min-width: 1184px){
+    .hero{
+        .girl{
+            top: -30%;
+        }
+
+        .arrow{
+            top: -7em;
+        }
+    }
+
+    .principles{
+        overflow: hidden;
+        width: 96%;
+
+        h1{
+            margin-left: 2%;
+        }
+
+        .circle{
+            margin-left: 15%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1340px){
+    .hero{
+        .girl{
+            top: -50%;
+        }
+
+        h1{
+            top: -2em;
+        }
+
+        p{
+            top: -12em;
+        }
+
+        .arrow{
+            height: 1.5em;
+            top: -8em;
+        }
+
+    }
+
+    .principles{
+        width: 120%;
+
+        h1{
+            margin-left: -7em;
+        }
+        .circle{
+            margin-left: 20%;
+        }
+    }
+}
+
+@media(max-width: 1900px) and (min-width: 1500px){
+    .hero{
+
+        h1{
+            top: -30%;
+            left: -15%;
+        }
+        P{
+            top: -80%;
+        }
+
+        .arrow{
+            top: -12em;
+        }
+
+        .girl{
+            top: -75%;
+        }
+    }
+    .principles{
+       // font-size: 2px;
+       h1{
+           justify-content: center;
+       }
+      .circle{
+         // margin-left: -25%;
+          font-size: 16px;
+      }
+
+      .circleposition{
+          justify-content: space-around;
+        .c3{
+          left: -5%;
+          grid-row: 1;
+          grid-column: 4;
+        }
+        .c4{
+            left: -5%;
+            grid-row: 1;
+            grid-column: 5;
+        }
+      }
+      
+    }
+
+    .home{
+        .footer{
+            justify-content: space-between;
+            top: 245%;
+         //    margin-left: 10%;
+        }
+    }
+}
+
+
