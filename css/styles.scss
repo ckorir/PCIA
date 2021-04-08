@@ -614,6 +614,7 @@
 
         .info{
             padding-right: 6em;
+            padding-top: 10%;
 
             h1{
                 text-align: left;
@@ -624,15 +625,14 @@
                 margin-left: 5%;
             }
             p{
-                margin-top: 15%;
+                width: 70%;
+                margin-left: 3%;
+                margin-top: 5%;
             }
         }
 
         .footer2{
             text-align: center;
-         //   padding: 5em;
-           // font-size: 15px;
-           // bottom: -11.5%;
         }
     }
 
@@ -652,12 +652,6 @@
                 }
             }
         }
-
-     /*   .footer2{
-            bottom: -8%;
-            padding-left: 8%;
-            text-align: center;
-        } */
     }
 
     .footer{
@@ -739,7 +733,6 @@
     }
 
     .pages{
-      //  font-size: 30px;
        /* .info{
             position: relative;
             top: -5%;
@@ -750,9 +743,6 @@
         } */
 
         .footer2{
-          //  font-size:20px;
-         //   bottom: -5%;
-
             .links{
                 a{
                     font-size: 14px;
@@ -883,30 +873,6 @@
             top: 310%;
             padding-bottom: 2em;
         }
-    }
-
-    .pages{
-     //   font-size: 20px;
-
-        .info{
-           // top: -18%;
-
-            p{
-                margin-top: 10%;
-            }
-        }
-
-       /* .footer2{
-            bottom: 7%;
-            font-size: 15px;
-            padding: 22px;
-
-            .links{
-                a{
-                    font-size: 16px;
-                }   
-            }
-        } */
     }
 }
 
@@ -1048,44 +1014,4 @@
             top: -90%;
         }
     }
-
-    .pages{
-        .info{
-            top: -30%;
-        }
-
-       /* .footer2{
-            top: 15%;
-        } */
-    }
-
 }
-
-/*
-
- @media only screen and (max-width: 8900px){
-    .pages{
-        .info{
-          //  position: fixed;
-            padding-top: 12%;
-            
-            p{
-                margin-top: 10%;
-            }
-        }
-        .footer2{
-            padding-top: 1em;
-            padding-bottom: 1em;
-            position: fixed;
-            bottom: 0%;
-
-            .links{
-                a{
-                    font-size: 16px;
-                }   
-            } 
-        }
-    }
-}
-
-*/

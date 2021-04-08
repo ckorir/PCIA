@@ -561,6 +561,7 @@ a {
   }
   .pages .info {
     padding-right: 6em;
+    padding-top: 10%;
   }
   .pages .info h1 {
     text-align: left;
@@ -571,18 +572,15 @@ a {
     margin-left: 5%;
   }
   .pages .info p {
-    margin-top: 15%;
+    width: 70%;
+    margin-left: 3%;
+    margin-top: 5%;
   }
   .pages .footer2 {
     text-align: center;
   }
   .request {
     font-size: 20px;
-    /*   .footer2{
-            bottom: -8%;
-            padding-left: 8%;
-            text-align: center;
-        } */
   }
   .request .inquiryform {
     top: 10%;
@@ -781,22 +779,6 @@ a {
     top: 310%;
     padding-bottom: 2em;
   }
-  .pages {
-    /* .footer2{
-            bottom: 7%;
-            font-size: 15px;
-            padding: 22px;
-
-            .links{
-                a{
-                    font-size: 16px;
-                }   
-            }
-        } */
-  }
-  .pages .info p {
-    margin-top: 10%;
-  }
 }
 
 @media only screen and (min-width: 1130px) {
@@ -900,42 +882,5 @@ a {
   .hero .girl {
     top: -90%;
   }
-  .pages {
-    /* .footer2{
-            top: 15%;
-        } */
-  }
-  .pages .info {
-    top: -30%;
-  }
 }
-
-/*
-
- @media only screen and (max-width: 8900px){
-    .pages{
-        .info{
-          //  position: fixed;
-            padding-top: 12%;
-            
-            p{
-                margin-top: 10%;
-            }
-        }
-        .footer2{
-            padding-top: 1em;
-            padding-bottom: 1em;
-            position: fixed;
-            bottom: 0%;
-
-            .links{
-                a{
-                    font-size: 16px;
-                }   
-            } 
-        }
-    }
-}
-
-*/
 /*# sourceMappingURL=styles.css.map */
