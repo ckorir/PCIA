@@ -259,6 +259,21 @@ a {
   right: 2em;
 }
 
+.footer2 {
+  background-color: var(--foot);
+  color: white;
+  padding: 5%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+}
+
+.footer2 a {
+  color: white;
+}
+
 .inquiryform {
   position: relative;
   top: 15%;
@@ -327,19 +342,6 @@ a {
   grid-column: 2;
 }
 
-.footer2 {
-  background-color: var(--foot);
-  color: white;
-  position: relative;
-  bottom: -21.3%;
-  padding: 5%;
-  width: 100%;
-}
-
-.footer2 a {
-  color: white;
-}
-
 @media only screen and (max-width: 1040px) {
   .nav label {
     display: block;
@@ -393,10 +395,6 @@ a {
   .pages .info {
     padding-top: 35%;
   }
-  .footer2 {
-    font-size: 11px;
-    bottom: -37.5%;
-  }
   .request {
     font-size: 11px;
   }
@@ -440,7 +438,6 @@ a {
   }
   .footer2 {
     font-size: 10px;
-    bottom: -30%;
   }
   .request .footer2 {
     margin-top: 16%;
@@ -562,9 +559,6 @@ a {
   .principles .circle p {
     width: 80%;
   }
-  .pages {
-    font-size: 20px;
-  }
   .pages .info {
     padding-right: 6em;
   }
@@ -581,9 +575,6 @@ a {
   }
   .pages .footer2 {
     text-align: center;
-    padding: 5em;
-    font-size: 15px;
-    bottom: -11.5%;
   }
   .request {
     font-size: 20px;
@@ -668,21 +659,17 @@ a {
     font-size: 27px;
   }
   .pages {
-    font-size: 30px;
-  }
-  .pages .info {
-    position: relative;
-    top: -5%;
-  }
-  .pages .info p {
-    margin-left: 2%;
-  }
-  .pages .footer2 {
-    font-size: 20px;
-    bottom: -5%;
+    /* .info{
+            position: relative;
+            top: -5%;
+
+            p{
+                margin-left: 2%;
+            }
+        } */
   }
   .pages .footer2 .links a {
-    font-size: 25px;
+    font-size: 14px;
   }
 }
 
@@ -795,21 +782,20 @@ a {
     padding-bottom: 2em;
   }
   .pages {
-    font-size: 20px;
-  }
-  .pages .info {
-    top: -18%;
+    /* .footer2{
+            bottom: 7%;
+            font-size: 15px;
+            padding: 22px;
+
+            .links{
+                a{
+                    font-size: 16px;
+                }   
+            }
+        } */
   }
   .pages .info p {
     margin-top: 10%;
-  }
-  .pages .footer2 {
-    bottom: 7%;
-    font-size: 15px;
-    padding: 22px;
-  }
-  .pages .footer2 .links a {
-    font-size: 16px;
   }
 }
 
@@ -888,11 +874,10 @@ a {
   .principles .circle {
     margin-left: 0%;
   }
-  .pages .info {
-    top: -25%;
-  }
-  .pages .footer2 {
-    bottom: 15%;
+  .pages {
+    /*  .footer2{
+            bottom: 15%;
+        } */
   }
 }
 
@@ -914,8 +899,10 @@ a {
   .principles h1 {
     margin-left: -6%;
   }
-  .pages .info {
-    top: -25%;
+  .pages {
+    /* .info{
+            top: -25%;
+        } */
   }
   .pages .footer2 {
     bottom: 16.5%;
@@ -931,6 +918,26 @@ a {
   }
   .pages .footer2 {
     top: 15%;
+  }
+}
+
+@media only screen and (max-width: 8900px) {
+  .pages .info {
+    padding-top: 12%;
+  }
+  .pages .info p {
+    margin-top: 10%;
+  }
+  .pages .footer2 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: fixed;
+    bottom: 0%;
+    /* .links{
+                a{
+                    font-size: 16px;
+                }   
+            } */
   }
 }
 /*# sourceMappingURL=styles.css.map */

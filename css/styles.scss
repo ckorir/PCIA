@@ -201,8 +201,24 @@
         }
         
     }
+
+    
 }
 
+.footer2{
+    background-color: var(--foot);
+    color: white;
+    padding: 5%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+
+    a{
+        color: white;
+    }
+}
 
 
 .inquiryform{
@@ -274,19 +290,7 @@
     }
 }
 
-.footer2{
-    background-color: var(--foot);
-    color: white;
-    position: relative;
-    bottom: -21.3%;
-    padding: 5%;
-    width: 100%;
 
-    a{
-        color: white;
-    }
-
-}
 
 
 //Where Burger menu appears
@@ -353,27 +357,10 @@
         }
     }
 
-    .pages{
-        font-size: 13px;
-
-        .info{
-            padding-top: 35%;
-        }
-    }
-
-    .footer2{
-        font-size: 11px;
-        bottom: -37.5%;
-    }
-
     .request{
         font-size: 11px;
-        .footer2{
-            margin-top: 10%;
-        }
     }
     
-
 }
 
 // Iphone 5
@@ -413,20 +400,7 @@
             font-size: 11px;
         }
     }
-    
-    .pages{
-        font-size: 12px;
-
-        .info{
-            padding-top: 45%;
-        }
-    }
-
-    .footer2{
-        font-size: 10px;
-        bottom: -30%;
-    }
-
+ 
     .request{
         .footer2{
             margin-top: 16%;
@@ -471,22 +445,9 @@
         
     }
 
-    .pages{
-        font-size: 14px;
-
-        .footer2{
-            font-size: 12px;
-            bottom: -35.9%;
-        }
-    }
-
-  
 
     .request{
         font-size: 12px;
-        .footer2{
-            margin-top: 10%;
-        }
     }
     
 }
@@ -511,10 +472,6 @@
         }
     }
 
-    .footer2{
-        bottom: -40.8%;
-    }
-    
 }
 
 // pixel 2
@@ -531,14 +488,6 @@
         }
     }
 
-    .pages{
-        font-size: 16px;
-    }
-
-    .footer2{
-        bottom: -28%;
-    }
-    
 }
 
 // Iphone X
@@ -555,17 +504,6 @@
         }
     }
 
-    .pages{
-        font-size: 16px;
-
-        .footer2{
-            bottom: -45.1%;
-        }
-
-    }
-
-    
-    
 }
 
 //Ipad
@@ -610,7 +548,7 @@
     }
 
     .pages{
-        font-size: 20px;
+    //font-size: 20px;
 
         .info{
             padding-right: 6em;
@@ -630,9 +568,6 @@
 
         .footer2{
             text-align: center;
-            padding: 5em;
-            font-size: 15px;
-            bottom: -11.5%;
         }
     }
 
@@ -653,11 +588,6 @@
             }
         }
 
-        .footer2{
-            bottom: -8%;
-            padding-left: 8%;
-            text-align: center;
-        }
     }
 
     .footer{
@@ -739,23 +669,11 @@
     }
 
     .pages{
-        font-size: 30px;
-        .info{
-            position: relative;
-            top: -5%;
-
-            p{
-                margin-left: 2%;
-            }
-        }
 
         .footer2{
-            font-size:20px;
-            bottom: -5%;
-
             .links{
                 a{
-                    font-size: 25px;
+                    font-size: 14px;
                 }
             }
         }
@@ -886,25 +804,12 @@
     }
 
     .pages{
-        font-size: 20px;
+     //   font-size: 20px;
 
         .info{
-            top: -18%;
-
+           // top: -18%;
             p{
                 margin-top: 10%;
-            }
-        }
-
-        .footer2{
-            bottom: 7%;
-            font-size: 15px;
-            padding: 22px;
-
-            .links{
-                a{
-                    font-size: 16px;
-                }   
             }
         }
     }
@@ -1009,15 +914,6 @@
         }
     }
 
-    .pages{
-        .info{
-            top: -25%;
-        }
-        
-        .footer2{
-            bottom: 15%;
-        }
-    }
 }
 
 @media(max-width: 2000px) and (min-width: 1300px){
@@ -1050,10 +946,6 @@
     }
 
     .pages{
-        .info{
-            top: -25%;
-        }
-
         .footer2{
             bottom: 16.5%;
         }
@@ -1067,14 +959,29 @@
         }
     }
 
+}
+
+/* @media only screen and (max-width: 8900px){
     .pages{
         .info{
-            top: -30%;
+          //  position: fixed;
+            padding-top: 12%;
+            
+            p{
+                margin-top: 10%;
+            }
         }
-
         .footer2{
-            top: 15%;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            position: fixed;
+            bottom: 0%;
+
+           /* .links{
+                a{
+                    font-size: 16px;
+                }   
+            }  
         }
     }
-
-}
+} 
