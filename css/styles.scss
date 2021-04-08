@@ -131,7 +131,6 @@
 }
 
 .principles{
-    width: 100vw;
     background-color: var(--secondary);
     padding: 50px 20px;
     position: absolute;
@@ -179,22 +178,21 @@
     }
 
     .requestslide{
-        position: relative;
-        top: 70%;
-        right: -5em;
-        float: right;
-
         img{
+            float: right;
             position: relative;
             height: 3em;
-            right: 0em;
+            right: 3em;
+            transition: 2s;
           //  max-width: 100%;
            // height: min(10%,1.5rem);  
         }
 
         img:hover{
+            transition: 2s;
            // position: relative;
             right: 4em;
+            
         }
         
     }

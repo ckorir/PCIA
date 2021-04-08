@@ -192,7 +192,6 @@ a {
 }
 
 .principles {
-  width: 100vw;
   background-color: var(--secondary);
   padding: 50px 20px;
   position: absolute;
@@ -241,20 +240,18 @@ a {
   padding: 10px 20px;
 }
 
-.info .requestslide {
-  position: relative;
-  top: 70%;
-  right: -5em;
-  float: right;
-}
-
 .info .requestslide img {
+  float: right;
   position: relative;
   height: 3em;
-  right: 0em;
+  right: 3em;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .info .requestslide img:hover {
+  -webkit-transition: 2s;
+  transition: 2s;
   right: 4em;
 }
 
