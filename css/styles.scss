@@ -26,10 +26,41 @@
   .menu{
     text-align: center;
     margin-right: 3em;
+
+    
+
+    .motordrop{
+       // display: none;
+        background-color: white;
+        position: absolute;
+        padding: 0%;
+        text-align: center;
+        margin-left: 7.3%;
+        margin-top: 2.4%;
+
+        ul{
+            padding: 0%;
+        }
+        
+        li{
+            padding: 20px 18px 5px 0px;
+            text-align: center;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+          
+        }
+       
+    }
+    
+    .motor:hover .motordrop{
+        background-color: yellow;
+        display: none;
+        
+    }
+
+
       a{
           color: rgba(0, 0, 0, 0.89);
           margin-left: 1.5em;
-          text-decoration: none;
           padding: 10px;
       }
   }
@@ -183,18 +214,21 @@
         .requestslide{
             img{
                 float: right;
-                position: relative;
+                position: fixed;
                 height: 3em;
+                bottom: 25%;
                 right: -2.3em;
                 transition: 2s;
+                transform: rotate(90deg);
             //  max-width: 100%;
             // height: min(10%,1.5rem);  
             }
 
             img:hover{
                 transition: 2s;
+                bottom: 40%;
             // position: relative;
-                right: 2em;
+              //  right: 2em;
                 
             }
             
@@ -310,6 +344,18 @@
                 background-color: white;
                 display: block;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+            }
+
+            .motordrop{
+                box-sizing: border-box;
+
+                a{
+                    border-bottom: none;
+                }
+             //   position: fixed;
+             //   right: 8.5em;
+                top: 11%;
+                
             }
         }
 

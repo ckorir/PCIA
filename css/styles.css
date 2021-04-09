@@ -8,7 +8,8 @@ body {
           box-sizing: border-box;
 }
 
-a {
+li, ul, a {
+  list-style: none;
   text-decoration: none;
 }
 
@@ -82,10 +83,34 @@ a {
   margin-right: 3em;
 }
 
+.nav .menu .motordrop {
+  background-color: white;
+  position: absolute;
+  padding: 0%;
+  text-align: center;
+  margin-left: 7.3%;
+  margin-top: 2.4%;
+}
+
+.nav .menu .motordrop ul {
+  padding: 0%;
+}
+
+.nav .menu .motordrop li {
+  padding: 20px 18px 5px 0px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+}
+
+.nav .menu .motor:hover .motordrop {
+  background-color: yellow;
+  display: none;
+}
+
 .nav .menu a {
   color: rgba(0, 0, 0, 0.89);
   margin-left: 1.5em;
-  text-decoration: none;
   padding: 10px;
 }
 
@@ -246,17 +271,20 @@ a {
 
 .pages .info .requestslide img {
   float: right;
-  position: relative;
+  position: fixed;
   height: 3em;
+  bottom: 25%;
   right: -2.3em;
   -webkit-transition: 2s;
   transition: 2s;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .pages .info .requestslide img:hover {
   -webkit-transition: 2s;
   transition: 2s;
-  right: 2em;
+  bottom: 40%;
 }
 
 .footer2 {
@@ -358,6 +386,14 @@ a {
     background-color: white;
     display: block;
     border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+  }
+  .nav .menu .motordrop {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    top: 11%;
+  }
+  .nav .menu .motordrop a {
+    border-bottom: none;
   }
 }
 
