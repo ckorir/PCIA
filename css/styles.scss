@@ -13,6 +13,8 @@
   justify-content: space-between;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 
+  
+
   .logo{
       img{
           margin-right: 2em;
@@ -26,37 +28,67 @@
   .menu{
     text-align: center;
     margin-right: 3em;
-
     
+    a{
+        transition: .8s;
+    }
+
+    a:hover{
+        transition: .8s;
+        background-color: #1E2E7A;
+        color: white;
+    }
 
     .motordrop{
-       // display: none;
+        
+        display: none;
+        transition: .5s;
         background-color: white;
         position: absolute;
         padding: 0%;
         text-align: center;
         margin-left: 7.3%;
-        margin-top: 2.4%;
+        margin-top: 2%;
 
         ul{
             padding: 0%;
         }
         
         li{
-            padding: 20px 18px 5px 0px;
-            text-align: center;
+            padding: 10px 18px 5px 0px;
+            justify-content: center;
             box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
           
         }
        
     }
-    
-    .motor:hover .motordrop{
-        background-color: yellow;
-        display: none;
-        
+
+    .motor{
+        display: initial;
     }
 
+    .motor:hover{
+        transition: .5s;
+        padding-bottom: 5%;
+    }
+
+    .motor:hover .motordrop{
+        transition: 5s;
+        display: block;
+        position: absolute;
+
+        li:hover{
+            background-color: #1E2E7A;
+            color: white;
+
+            a{
+                color: white;
+                background-color: inherit;
+            }
+        }
+
+        
+    }
 
       a{
           color: rgba(0, 0, 0, 0.89);
@@ -346,17 +378,21 @@
                 border-bottom: 1px solid rgba(0, 0, 0, 0.267);
             }
 
-            .motordrop{
-                box-sizing: border-box;
+            .motor{
+              display: inline-flex;
+              justify-content: center;
+              width: 100%;
+     
+                .motordrop{
+                    a{
+                        border-bottom: none;
+                    }
 
-                a{
-                    border-bottom: none;
-                }
-             //   position: fixed;
-             //   right: 8.5em;
-                top: 11%;
-                
-            }
+                    right: 8.5em;
+                    top: 11%;
+                    
+                 }
+            }           
         }
 
     }
