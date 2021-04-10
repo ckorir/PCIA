@@ -447,9 +447,9 @@
 
     .request{
         font-size: 11px;
-        .footer2{
+      /*  .footer2{
             margin-top: 10%;
-        }
+        } */
     }
     
 
@@ -506,11 +506,11 @@
        // bottom: -30%;
     }
 
-    .request{
+   /* .request{
         .footer2{
             margin-top: 16%;
-        }
-    }
+        } 
+    } */
 
 }
 
@@ -563,9 +563,9 @@
 
     .request{
         font-size: 12px;
-        .footer2{
+      /*  .footer2{
             margin-top: 10%;
-        }
+        } */
     }
     
 }
@@ -698,28 +698,6 @@
         }
     }
 
-    .request{
-        font-size: 20px;
-
-        .inquiryform{
-            top: 10%;
-
-            form{
-                input{
-                    margin-bottom: 2%;
-                }
-
-                button{
-                    width: 84%;
-                }
-            }
-        }
-    }
-
-    .footer{
-        font-size: 17px;
-    }
-    
 }
 
 //Ipad pro
@@ -793,26 +771,6 @@
     .principles{
         font-size: 27px;
     }
-
-    .pages{
-       /* .info{
-            position: relative;
-            top: -5%;
-
-            p{
-                margin-left: 2%;
-            }
-        } */
-
-        .footer2{
-            .links{
-                a{
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-
 }
 
 //laptop
