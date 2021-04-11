@@ -14,7 +14,7 @@ class InquiryForm(forms.Form):
     phone_number = forms.DecimalField(label='Phone Number', decimal_places=0, max_digits=15)
     email = forms.EmailField(label='Email')
     location = forms.CharField(label='Location', max_length =50)
-    cover_type = forms.CharField(label='Cover Type', widget=forms.Select(choices=cover_choice))
+    cover_type = forms.CharField(label='Cover Type', max_length =50)
     subject = forms.CharField(label='Subject', max_length =100)
     message = forms.CharField(label='Message', widget=forms.Textarea(attrs={"rows":5, "cols":20}))
 

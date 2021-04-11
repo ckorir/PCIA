@@ -1,6 +1,31 @@
 h1{
   color: black;
   text-align: center;
+  font-size: 25px;
+}
+
+@font-face {
+  font-family: 'montslight';
+  src: local('montslight'), url('../fonts/Montserrat-Light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'montsmedium';
+  src: local('montsmedium'), url('../fonts/Montserrat-Medium.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'monts';
+  src: local('monts'), url('../fonts/Montserrat-Regular.ttf') format("truetype");
+}
+
+body{
+  font-size: 12px;
+  font-family: 'monts';
+}
+
+h2{
+  font-size: 20px;
 }
 
 .hl{
@@ -178,8 +203,58 @@ h1{
   }
 }
 
+/* extra thin devices */
+@media screen and (max-width: 430px){
+  body{
+    font-size: 12px;
+  }
+
+  h1{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .line{
+    margin-top: 10px;
+    padding: 0%;
+  }
+
+  h2{
+    font-size: 15px;
+  }
+
+  .hl{
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-right: 11px;
+  }
+
+  .hl h1{
+    text-align: center;
+  }
+
+  .icon3{
+    padding: 0px;
+    margin-left: 25px;
+    width: 40px; 
+    height: 40px;
+  }
+}
+
 /* small tablet styles */
 @media screen and (min-width: 620px){
+  body{
+    font-size: 14px;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+  h2{
+    font-size: 25px;
+  }
+
   .icon3{
     padding: 0px;
     margin-left: 80px;
@@ -209,6 +284,18 @@ h1{
 
 /* large tablets & laptop styles */
 @media screen and (min-width: 960px){
+  body{
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 35px;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+
   .icon3{
     padding: 0px;
     margin-left: 80px;
@@ -254,6 +341,18 @@ h1{
 
 /*desktop styles */
 @media screen and (min-width: 1200px){
+  body{
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+
+  h2{
+    font-size: 35px;
+  }
+
   .icon3{
     padding: 0px;
     margin-left: 90px;

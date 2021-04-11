@@ -35,15 +35,17 @@
       <img src="{% static "img/Burger.png" %}" alt=""></img>
     </label>
      
-</div><br><br><br><br>
+  </div><br><br><br><br>
+  
      
-
-  {% if messages %}
-    {% for message in messages %}
-      {% bootstrap_javascript jquery=True %}
-      {% bootstrap_messages message %}
-    {% endfor %}
-  {% endif %}
+  <div class="message">
+    {% if messages %}
+      {% for message in messages %}
+        {% bootstrap_javascript jquery=True %}
+        {% bootstrap_messages message %}
+      {% endfor %}
+    {% endif %}
+  </div>
   
   <div class="hl">
     <img class="icon3" style="float:left" src="{% static "img/info2.png" %}" alt=""></img><h1>Inquiry</h1>
@@ -52,14 +54,7 @@
     <div class="container-fluid">
         <form class="form" action="{%url 'inquiry'%}" method="post">
           {%csrf_token%}
-          {% bootstrap_form letterForm exclude="cover_type,subject,message" layout='inline'  %}
-          <div class="strong">
-            <strong>Cover Type</strong>
-          </div>
-          <div class="cover">
-            {% bootstrap_form letterForm exclude="first_name,last_name,phone_number,email,subject,message,location" layout='inline'  %}
-          </div>
-          {% bootstrap_form letterForm exclude="first_name,last_name,phone_number,email,cover_type,location," layout='inline'  %}
+          {% bootstrap_form letterForm layout='inline'  %}
           <div class="sub">
             <input type="submit" value="Submit" class="btn btn-primary btn-sm btn-block ">
           </div>

@@ -1,7 +1,31 @@
 h1{
   color: black;
   text-align: center;
-  margin-top: 0;
+  font-size: 25px;
+}
+
+@font-face {
+  font-family: 'montslight';
+  src: local('montslight'), url('../fonts/Montserrat-Light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'montsmedium';
+  src: local('montsmedium'), url('../fonts/Montserrat-Medium.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'monts';
+  src: local('monts'), url('../fonts/Montserrat-Regular.ttf') format("truetype");
+}
+
+body{
+  font-size: 12px;
+  font-family: 'monts';
+}
+
+h2{
+  font-size: 20px;
 }
 
 .hl{
@@ -95,8 +119,9 @@ h1{
 .icon3{
   padding: 0px;
   margin-left: 130px;
-  width: 47px; 
-  height: 47px;
+  margin-bottom: 5px;
+  width: 40px; 
+  height: 40px;
 }
 
 .line{
@@ -179,8 +204,58 @@ h1{
   }
 }
 
+/* extra thin devices */
+@media screen and (max-width: 430px){
+  body{
+    font-size: 12px;
+  }
+
+  h1{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+  }
+
+  .line{
+    margin-top: 10px;
+    padding: 0%;
+  }
+
+  h2{
+    font-size: 15px;
+  }
+
+  .hl{
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-right: 100px;
+  }
+
+  .icon3{
+    padding: 0px;
+    margin-left: 50px;
+    margin-bottom: 2px;
+    width: 35px; 
+    height: 35px;
+  }
+
+}
+
 /* small tablet styles */
 @media screen and (min-width: 620px){
+  body{
+    font-size: 14px;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+  h2{
+    font-size: 25px;
+  }
+
   .icon3{
     padding: 0px;
     margin-left: 80px;
@@ -210,6 +285,18 @@ h1{
 
 /* large tablets & laptop styles */
 @media screen and (min-width: 960px){
+  body{
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 35px;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+
   .icon3{
     padding: 0px;
     margin-left: 80px;
@@ -243,18 +330,30 @@ h1{
   }
 
   .quick-link{
-    margin-right: 5%;
-    margin-left: 10%;
+    margin-right: 1%;
+    margin-left: 5%;
   }
 
   .contact{
-    margin-left: 10%;
-    margin-right: 15%;
+    margin-left: 15%;
+    margin-right: 20%;
   }
 }
 
 /*desktop styles */
 @media screen and (min-width: 1200px){
+  body{
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+
+  h2{
+    font-size: 35px;
+  }
+
   .icon3{
     padding: 0px;
     margin-left: 90px;
@@ -288,12 +387,12 @@ h1{
   }
 
   .quick-link{
-    margin-right: 5%;
-    margin-left: 10%;
+    margin-right: 1%;
+    margin-left: 5%;
   }
 
   .contact{
-    margin-left: 10%;
-    margin-right: 15%;
+    margin-left: 15%;
+    margin-right: 20%;
   }
 }
