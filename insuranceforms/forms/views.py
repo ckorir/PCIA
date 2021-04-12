@@ -8,6 +8,18 @@ from django.contrib import messages
 def welcome(request):
     return render(request, 'index.html')
 
+def fire(request):
+    return render(request, 'fire.html')
+
+def liability(request):
+    return render(request, 'liability.html')
+
+def marine(request):
+    return render(request, 'marine.html')
+
+def property1(request):
+    return render(request, 'property.html')
+
 def inquiry(request):
     if request.method == 'POST':
         form = InquiryForm(request.POST)

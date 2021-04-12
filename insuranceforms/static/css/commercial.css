@@ -4,6 +4,16 @@ h1{
   font-size: 25px;
 }
 
+li, ul, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.navi .menu a{
+  list-style: none;
+  text-decoration: none;
+}
+
 @font-face {
   font-family: 'montslight';
   src: local('montslight'), url('../fonts/Montserrat-Light.ttf') format("truetype");
@@ -48,6 +58,10 @@ h2{
   padding-top: 5px;
 }
 
+.quick-link a{
+  color: white;
+}
+
 .form{
   padding-top: 10px;
   padding-bottom: 10px;
@@ -61,7 +75,7 @@ h2{
   padding-bottom: 20px;
 }
 
-.nav {
+.navi {
   position: fixed;
   z-index: 1;
   top: 0%;
@@ -71,35 +85,90 @@ h2{
   height: 68px;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-.nav .logo img {
+.navi .logo img {
   margin-right: 2em;
-  left: 0%;
+  left: 20%;
   top: -2%;
   position: relative;
   height: 2.5em;
 }
 
-.nav .menu {
+.navi .menu {
   text-align: center;
   margin-right: 3em;
 }
 
-.nav .menu a {
+.navi .menu a {
+  transition: .8s;
+}
+
+.navi .menu a:hover {
+  transition: .8s;
+  background-color: #1E2E7A;
+  color: white;
+}
+
+.navi .menu .motordrop {
+  display: none;
+  transition: .5s;
+  background-color: white;
+  position: absolute;
+  padding: 0%;
+  text-align: center;
+  margin-left: 7.3%;
+  margin-top: 2%;
+}
+
+.navi .menu .motordrop ul {
+  padding: 0%;
+}
+
+.navi .menu .motordrop li {
+  padding: 10px 18px 5px 0px;
+  justify-content: center;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+}
+
+.navi .menu .motor {
+  display: initial;
+}
+
+.navi .menu .motor:hover {
+  transition: .5s;
+  padding-bottom: 5%;
+}
+
+.navi .menu .motor:hover .motordrop {
+  transition: 5s;
+  display: block;
+  position: absolute;
+}
+
+.navi .menu .motor:hover .motordrop li:hover {
+  background-color: #1E2E7A;
+  color: white;
+}
+
+.navi .menu .motor:hover .motordrop li:hover a {
+  color: white;
+  background-color: inherit;
+}
+
+.navi .menu a {
   color: rgba(0, 0, 0, 0.89);
   margin-left: 1.5em;
-  text-decoration: none;
   padding: 10px;
 }
 
-.nav #toggle {
+.navi #toggle {
   float: right;
   display: none;
 }
 
-.nav label {
+.navi label {
   display: none;
   cursor: pointer;
   position: relative;
@@ -112,19 +181,18 @@ h2{
 }
 
 .strong{
-  margin-top: 0;
   margin-bottom: 5px;
 }
 
 .icon3{
   padding: 0px;
-  margin-left: 20px;
+  margin-left: 30px;
   width: 47px; 
   height: 47px;
 }
 
 .line{
-  width: 60%;
+  width: 65%;
   height:1px;
   border-width:0;
   color:gray;
@@ -132,10 +200,10 @@ h2{
 }
 
 @media only screen and (max-width: 1040px) {
-  .nav label {
+  .navi label {
     display: block;
   }
-  .nav .menu {
+  .navi .menu {
     display: none;
     top: 12em;
     left: 7.45em;
@@ -143,18 +211,34 @@ h2{
     text-align: center;
     width: 60%;
   }
-  .nav .menu a {
+  .navi .menu a {
     background-color: white;
     display: block;
     border-bottom: 1px solid rgba(0, 0, 0, 0.267);
   }
+  .navi .menu .motor {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .navi .menu .motor .motordrop {
+    right: 8.5em;
+    top: 11%;
+  }
+  .navi .menu .motor .motordrop a {
+    border-bottom: none;
+  }
 }
 
 @media only screen and (max-width: 360px) {
-  .nav {
+  .navi {
     font-size: 12px;
   }
-  .nav .menu {
+  .navi .menu {
     position: absolute;
     left: 40%;
     top: 85%;
@@ -162,43 +246,76 @@ h2{
 }
 
 @media only screen and (min-width: 768px) {
-  .nav .menu {
+  .navi .menu {
     top: 12em;
   }
-  .nav .menu a {
+  .navi .menu a {
     height: 2em;
   }
 }
 
-@media (min-height: 800px) and (min-width: 1024px) {
-  .nav {
+@media (min-width: 414px) and (min-height: 500px) and (min-width: 1024px) {
+  .navi {
     padding: 20px;
   }
-  .nav .logo img {
+  .navi .logo img {
     height: 3.2em;
   }
-  .nav .stack {
+  .navi .stack {
     margin-right: 5em;
   }
-  .nav .stack img {
+  .navi .stack img {
     height: 1.5em;
   }
-  .nav .menu {
+  .navi .menu {
+    left: 25%;
+  }
+}
+
+@media only screen and (min-width: 414px) and (min-width: 1025px) {
+  .navi {
+    padding: 4px;
+  }
+  .navi .logo img {
+    height: 2.2em;
+  }
+  .navi .stack img {
+    height: 1em;
+  }
+  .navi .menu {
+    font-size: 18px;
+  }
+}
+
+@media (min-height: 800px) and (min-width: 1024px) {
+  .navi {
+    padding: 20px;
+  }
+  .navi .logo img {
+    height: 3.2em;
+  }
+  .navi .stack {
+    margin-right: 5em;
+  }
+  .navi .stack img {
+    height: 1.5em;
+  }
+  .navi .menu {
     left: 25%;
   }
 }
 
 @media only screen and (min-width: 1030px) {
-  .nav {
+  .navi {
     padding: 4px;
   }
-  .nav .logo img {
+  .navi .logo img {
     height: 2.2em;
   }
-  .nav .stack img {
+  .navi .stack img {
     height: 1.2em;
   }
-  .nav .menu {
+  .navi .menu {
     font-size: 18px;
   }
 }
@@ -391,7 +508,7 @@ h2{
   }
 
   .contact{
-    margin-left: 10%;
+    margin-left: 20%;
     margin-right: 15%;
   }
 }

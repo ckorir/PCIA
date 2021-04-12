@@ -11,23 +11,31 @@
     {% block styles %}
     {% bootstrap_css %}
     <link rel="stylesheet" href="{% static 'css/app2.css' %}">
-  {% endblock %}
+    {% endblock %}
 </head>
 <body>
   <body class="home">
-    <div class="nav">
+    <div class="navi">
         <div class="logo">
-            <a href="index.html"><img src="{% static "img/logo.png" %}" alt=""></img></a>
+            <a href={% url 'welcome' %}><img src="{% static "img/logo.png" %}" alt=""></img></a>
         </div>
         
         <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="#">Motor</a>
-            <a href="property.html">Property</a>
-            <a href="fire.html">Fire</a>
-            <a href="liability.html">Liability</a>
-            <a href="marine.html">Marine</a>
-            <a href="inquiry.html">Contact Us</a>
+            <a href={% url 'welcome' %}>Home</a>
+            <div class="motor">
+                <a href="#" class="motor">Motor</a>
+                <ul class="motordrop">
+                    <li><a href={% url 'privatemotor' %}>Private</a></li>
+                    <li><a href={% url 'commercial' %}>Commercial</a></li>
+                    <li><a href={% url 'psv' %}>PSV</a></li> 
+                </ul>
+            </div>
+            <a href={% url 'property' %}>Property</a>
+            <a href={% url 'fire' %}>Fire</a>
+            <a href={% url 'liability' %}>Liability</a>
+            <a href={% url 'marine' %}>Marine</a>
+            <a href={% url 'inquiry' %}>Contact Us</a>
+            
         </div>
 
         <input type="checkbox" id="toggle"/>
@@ -39,37 +47,33 @@
 
     <section class="hero grid">
         <h1 class="title">PRIME COVER INSURANCE AGENCY</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            iusmod tempor incididunt ut laboreet dolore magna aliqua. Nec sagittis aliquam malesuada
-            iusmod tempor incididunt ut laboreet dolore magna aliqua. Nec sagittis aliquam malesuada
+        <p>We take care of your insurance needs to prevent you from
+            incurring unwanted losses from accidental incidents.
+            Why lose it when you can insure it.
          </p>
-         {% load static %} <img src="{% static "img/ar2.png" %}" alt="" class="arrow"></img>
-         {% load static %} <img src="{% static "img/insurgg.png" %}" alt="" class="girl"></img>
+         <img src="{% static "img/ar2.png" %}" alt="" class="arrow"></img>
+         <img src="{% static "img/insurgg.png" %}" alt="" class="girl"></img>
     </section>
 
     <section class="about">
         <h1>About Us</h1>
         <hr></hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            iusmod tempor incididunt ut laboreet dolore magna aliqua. Nec sagittis aliquam malesuada
-            bibendum arcu vitae elementum curabitur. Facilisis sed odio Lorem ipsum dolor sit amet,consecteturadipiscing elit, sediusmod tempor incididunt ut laboreet dolore magna aliqua. Nec sagittis aliquam malesuada
-            bibendum arcu vitae elementum curabitur.
-        </p>
+        <p>We take care of your insurance needs to prevent you from
+            incurring unwanted losses from accidental incidents.
+            Why lose it when you can insure it.
+         </p>
         <div class="cards">
             <div class="card1">
                 <h1>Our Mission</h1>
-                <p>Lorem ipsum dolor sit amet,consectetur
-                    adipiscing elit, sedusmod empor incididunt
-                ut laboreet dolore magnaaliquaLorem ipsum
-                dolor sit amet, consectetur ayst dipiscing 
+                <p>To provide quality and professional insurance services to all our clients by
+                    committing to the highest standards of client service, employee morale and ethical
+                    practice without deviation.
                 </p>
             </div>
             <div class="card2">
                 <h1>Our Vision</h1>
-                <p>Lorem ipsum dolor sit amet,consectetur
-                    adipiscing elit, sedusmod empor incididunt
-                ut laboreet dolore magnaaliquaLorem ipsum
-                dolor sit amet, consectetur ayst dipiscing 
+                <p>“Be the ideal contractual insurance services provider of choice across Kenya and East
+                    Africa empowering other businesses and households.”
                 </p>
             </div>     
         </div>
@@ -79,16 +83,16 @@
         <h1>Our Principles</h1>
         <div class="circleposition">
             <div class="circle c1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedusmod tempor incididunt ut laboreet dolore magna aliquaLorem ipsum dolor sit amet, </p>
+                <p>Our Clients always come first. </p>
             </div>
             <div class="circle c2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedusmod tempor incididunt ut laboreet dolore magna aliquaLorem ipsum dolor sit amet, </p>
+                <p>We must provide the highest level of service with integrity. </p>
             </div>
             <div class="circle c3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedusmod tempor incididunt ut laboreet dolore magna aliquaLorem ipsum dolor sit amet, </p>
+                <p>Ensuring client satisfaction through the provision of quality service.</p>
             </div>
             <div class="circle c4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedusmod tempor incididunt ut laboreet dolore magna aliquaLorem ipsum dolor sit amet, </p>
+                <p>Communicating with our clients clearly and frequently </p>
             </div>
         </div>
     </section>
@@ -96,12 +100,13 @@
     <section class="footer grid2">
         <div class="links">
             <h1>QUICK LINK</h1>
-            <p><a href="index.html">Home</a> | 
-                <a href="#">Motor</a> | 
-                <a href="property.html">Property</a> | 
-                <a href="fire.html">Fire</a> | 
-                <a href="liability.html">Liability</a> |
-                <a href="marine.html">Marine</a>  
+            <p><a href={% url 'privatemotor' %}>Private</a> | 
+                <a href={% url 'commercial' %}>Commercial</a> | 
+                <a href={% url 'psv' %}>PSV</a> | 
+                <a href={% url 'property' %}>Property</a> | 
+                <a href={% url 'fire' %}>Fire</a> | 
+                <a href={% url 'liability' %}>Liability</a> |
+                <a href={% url 'marine' %}>Marine</a>  
             </p>
         </div>
         <div class="contact">

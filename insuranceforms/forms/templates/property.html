@@ -1,0 +1,85 @@
+{% load bootstrap3 %}
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" class="icon2" href="{% static "img/umbrella.png" %}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Cover Insurance Agency</title>
+    {% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/app2.css' %}">
+    {% endblock %}
+</head>
+<body class="pages">
+    <div class="navi">
+        <div class="logo">
+            <a href={% url 'welcome' %}><img src="{% static "img/logo.png" %}" alt=""></img></a>
+        </div>
+        
+        <div class="menu">
+            <a href={% url 'welcome' %}>Home</a>
+            <div class="motor">
+                <a href="#" class="motor">Motor</a>
+                <ul class="motordrop">
+                    <li><a href={% url 'privatemotor' %}>Private</a></li>
+                    <li><a href={% url 'commercial' %}>Commercial</a></li>
+                    <li><a href={% url 'psv' %}>PSV</a></li> 
+                </ul>
+            </div>
+            <a href={% url 'property' %}>Property</a>
+            <a href={% url 'fire' %}>Fire</a>
+            <a href={% url 'liability' %}>Liability</a>
+            <a href={% url 'marine' %}>Marine</a>
+            <a href={% url 'inquiry' %}>Contact Us</a>
+            
+        </div>
+
+        <input type="checkbox" id="toggle"/>
+        <label for="toggle" class="stack">
+          <img src="{% static "img/Burger.png" %}" alt=""></img>
+        </label>
+         
+    </div>
+    <section class="info">
+        <h1>Property Insurance</h1>
+        <hr></hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+        iusmod tempor incididunt ut laboreet dolore magna aliqua. Nec sagittis aliquam malesuada
+        bibendum arcu vitae elementum curabitur. Facilisis sed odio Lorem ipsum dolor sit amet,consecteturadipiscing elit, sediusmod tempor incididunt ut laboreet dolore magna aliqua. Nec sagittis aliquam malesuada
+        bibendum arcu vitae elementum curabitur. Facilisis sed odio Lorem ipsum dolor sit
+        </p>
+        <div class="requestslide">
+            <img src="{% static "img/slide.png" %}" alt=""></img>
+        </div>
+    </section>
+    <section class="footer2 grid2">
+        <div class="links">
+            <h1>QUICK LINK</h1>
+            <p><a href={% url 'welcome' %}>Home</a> | 
+                <a href={% url 'privatemotor' %}>Private</a> | 
+                <a href={% url 'commercial' %}>Commercial</a> | 
+                <a href={% url 'psv' %}>PSV</a> | 
+                <a href={% url 'fire' %}>Fire</a> | 
+                <a href={% url 'liability' %}>Liability</a> |
+                <a href={% url 'marine' %}>Marine</a>  
+            </p>
+        </div>
+        <div class="contact">
+            <h1>CONTACT US</h1>
+            <p>Swing House, 3rd Floor Room 3</br>
+                Madaraka Centre</br>
+                P.O BOX 37874 - 00100 Nairobi</br>
+                Mr. Chris Ruto</br>
+                +254 701957617
+            </p>
+
+        </div>
+    </section>
+    
+    
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

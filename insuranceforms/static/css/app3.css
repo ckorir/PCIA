@@ -4,48 +4,37 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: 'monts';
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-li, ul, a {
-  list-style: none;
-  text-decoration: none;
-}
-
-.navi .menu a{
-  list-style: none;
+a {
   text-decoration: none;
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[9];
-      grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(9, 1fr);
 }
 
 .grid2 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2em;
 }
 
 @font-face {
   font-family: 'montslight';
-  src: local('montslight'), url('../fonts/Montserrat-Light.ttf') format("truetype");
+  src: url("/fonts/Montserrat-Light.ttf");
 }
 
 @font-face {
   font-family: 'montsmedium';
-  src: local('montsmedium'), url('../fonts/Montserrat-Medium.ttf') format("truetype");
+  src: url("/fonts/Montserrat-Medium.ttf");
 }
 
 @font-face {
   font-family: 'monts';
-  src: local('monts'), url('../fonts/Montserrat-Regular.ttf') format("truetype");
+  src: url("/fonts/Montserrat-Regular.ttf");
 }
 
 :root {
@@ -55,27 +44,20 @@ li, ul, a {
   --circle: #9299FF;
 }
 
-.navi {
+.nav {
   position: fixed;
   z-index: 1;
   top: 0%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: white;
   width: 100%;
   height: 68px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-.navi .logo img {
+.nav .logo img {
   margin-right: 2em;
   left: 20%;
   top: -2%;
@@ -83,26 +65,23 @@ li, ul, a {
   height: 2.5em;
 }
 
-.navi .menu {
+.nav .menu {
   text-align: center;
   margin-right: 3em;
 }
 
-.navi .menu a {
-  -webkit-transition: .8s;
+.nav .menu a {
   transition: .8s;
 }
 
-.navi .menu a:hover {
-  -webkit-transition: .8s;
+.nav .menu a:hover {
   transition: .8s;
   background-color: #1E2E7A;
   color: white;
 }
 
-.navi .menu .motordrop {
+.nav .menu .motordrop {
   display: none;
-  -webkit-transition: .5s;
   transition: .5s;
   background-color: white;
   position: absolute;
@@ -112,58 +91,53 @@ li, ul, a {
   margin-top: 2%;
 }
 
-.navi .menu .motordrop ul {
+.nav .menu .motordrop ul {
   padding: 0%;
 }
 
-.navi .menu .motordrop li {
+.nav .menu .motordrop li {
   padding: 10px 18px 5px 0px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
 }
 
-.navi .menu .motor {
+.nav .menu .motor {
   display: initial;
 }
 
-.navi .menu .motor:hover {
-  -webkit-transition: .5s;
+.nav .menu .motor:hover {
   transition: .5s;
   padding-bottom: 5%;
 }
 
-.navi .menu .motor:hover .motordrop {
-  -webkit-transition: 5s;
+.nav .menu .motor:hover .motordrop {
   transition: 5s;
   display: block;
   position: absolute;
 }
 
-.navi .menu .motor:hover .motordrop li:hover {
+.nav .menu .motor:hover .motordrop li:hover {
   background-color: #1E2E7A;
   color: white;
 }
 
-.navi .menu .motor:hover .motordrop li:hover a {
+.nav .menu .motor:hover .motordrop li:hover a {
   color: white;
   background-color: inherit;
 }
 
-.navi .menu a {
+.nav .menu a {
   color: rgba(0, 0, 0, 0.89);
   margin-left: 1.5em;
   padding: 10px;
 }
 
-.navi #toggle {
+.nav #toggle {
   float: right;
   display: none;
 }
 
-.navi label {
+.nav label {
   display: none;
   cursor: pointer;
   position: relative;
@@ -180,8 +154,6 @@ li, ul, a {
 
 .hero h1 {
   padding-top: 25%;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 7;
   grid-column: 2/9;
   color: var(--primary);
   text-align: center;
@@ -193,17 +165,13 @@ li, ul, a {
   text-align: center;
   margin-left: 10%;
   color: var(--primary);
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 8;
   grid-column: 1/9;
-  -ms-grid-row: 2;
   grid-row: 2;
 }
 
 .hero .arrow {
   position: relative;
   left: 30%;
-  -ms-grid-column: 5;
   grid-column: 5;
   bottom: 3em;
 }
@@ -211,10 +179,7 @@ li, ul, a {
 .hero .girl {
   display: none;
   width: 150%;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 4;
   grid-column: 4/8;
-  -ms-grid-row: 2;
   grid-row: 2;
 }
 
@@ -289,8 +254,7 @@ li, ul, a {
   width: 150%;
   top: 32%;
   left: 50%;
-  -webkit-transform: translate(-50%, -32%);
-          transform: translate(-50%, -32%);
+  transform: translate(-50%, -32%);
 }
 
 .pages {
@@ -319,14 +283,11 @@ li, ul, a {
   height: 3em;
   bottom: 25%;
   right: -2.3em;
-  -webkit-transition: 2s;
   transition: 2s;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .pages .info .requestslide img:hover {
-  -webkit-transition: 2s;
   transition: 2s;
   bottom: 40%;
 }
@@ -344,10 +305,6 @@ li, ul, a {
 
 .footer2 a {
   color: white;
-}
-
-.home .footer a{
-  color: black;
 }
 
 .inquiryform {
@@ -409,20 +366,18 @@ li, ul, a {
 }
 
 .home .footer .links {
-  -ms-grid-column: 1;
   grid-column: 1;
 }
 
 .home .footer .contact {
-  -ms-grid-column: 2;
   grid-column: 2;
 }
 
 @media only screen and (max-width: 1040px) {
-  .navi label {
+  .nav label {
     display: block;
   }
-  .navi .menu {
+  .nav .menu {
     display: none;
     top: 12em;
     left: 7.45em;
@@ -430,34 +385,30 @@ li, ul, a {
     text-align: center;
     width: 60%;
   }
-  .navi .menu a {
+  .nav .menu a {
     background-color: white;
     display: block;
     border-bottom: 1px solid rgba(0, 0, 0, 0.267);
   }
-  .navi .menu .motor {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
+  .nav .menu .motor {
     display: inline-flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     width: 100%;
   }
-  .navi .menu .motor .motordrop {
+  .nav .menu .motor .motordrop {
     right: 8.5em;
     top: 11%;
   }
-  .navi .menu .motor .motordrop a {
+  .nav .menu .motor .motordrop a {
     border-bottom: none;
   }
 }
 
 @media only screen and (max-width: 360px) {
-  .navi {
+  .nav {
     font-size: 12px;
   }
-  .navi .menu {
+  .nav .menu {
     position: absolute;
     left: 40%;
     top: 85%;
@@ -621,10 +572,10 @@ li, ul, a {
   body {
     font-size: 20px;
   }
-  .navi .menu {
+  .nav .menu {
     top: 12em;
   }
-  .navi .menu a {
+  .nav .menu a {
     height: 2em;
   }
   .about {
@@ -674,19 +625,19 @@ li, ul, a {
     font-size: 23px;
     top: 356%;
   }
-  .navi {
+  .nav {
     padding: 20px;
   }
-  .navi .logo img {
+  .nav .logo img {
     height: 3.2em;
   }
-  .navi .stack {
+  .nav .stack {
     margin-right: 5em;
   }
-  .navi .stack img {
+  .nav .stack img {
     height: 1.5em;
   }
-  .navi .menu {
+  .nav .menu {
     left: 25%;
   }
   .hero {
@@ -694,23 +645,16 @@ li, ul, a {
   }
   .hero h1 {
     font-size: 45px;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 7;
     grid-column: 2/9;
   }
   .hero p {
     margin-top: 35%;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
     grid-column: 1/5;
-    -ms-grid-row: 2;
     grid-row: 2;
   }
   .hero .girl {
     position: relative;
     display: block;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
     grid-column: 5/8;
     top: 10%;
     left: 17%;
@@ -729,16 +673,16 @@ li, ul, a {
 }
 
 @media only screen and (min-width: 414px) and (min-width: 1025px) {
-  .navi {
+  .nav {
     padding: 4px;
   }
-  .navi .logo img {
+  .nav .logo img {
     height: 2.2em;
   }
-  .navi .stack img {
+  .nav .stack img {
     height: 1em;
   }
-  .navi .menu {
+  .nav .menu {
     font-size: 18px;
   }
   .hero {
@@ -750,8 +694,6 @@ li, ul, a {
   .hero .girl {
     position: absolute;
     top: -8.5em;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 2;
     grid-column: 7/9;
   }
   .hero .arrow {
@@ -767,18 +709,14 @@ li, ul, a {
   .hero p {
     position: relative;
     top: -10em;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
     grid-column: 1/7;
   }
   .about {
     font-size: 18px;
   }
   .about .cards {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     font-size: 15px;
     margin-top: 1em;
   }
@@ -795,34 +733,24 @@ li, ul, a {
   .principles .circleposition {
     width: 100vw;
     margin-left: 7em;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: 2.5em;
   }
   .principles .circleposition .c1 {
-    -ms-grid-column: 1;
     grid-column: 1;
-    -ms-grid-row: 1;
     grid-row: 1;
   }
   .principles .circleposition .c2 {
-    -ms-grid-column: 2;
     grid-column: 2;
-    -ms-grid-row: 1;
     grid-row: 1;
   }
   .principles .circleposition .c3 {
-    -ms-grid-column: 1;
     grid-column: 1;
-    -ms-grid-row: 2;
     grid-row: 2;
   }
   .principles .circleposition .c4 {
-    -ms-grid-column: 2;
     grid-column: 2;
-    -ms-grid-row: 2;
     grid-row: 2;
   }
   .principles .circleposition .circle {
@@ -865,24 +793,19 @@ li, ul, a {
     font-size: 14px;
   }
   .principles .circleposition {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   .principles .circleposition .c2 {
     margin-left: 4%;
   }
   .principles .circleposition .c3 {
     left: -5%;
-    -ms-grid-row: 1;
     grid-row: 1;
-    -ms-grid-column: 4;
     grid-column: 4;
   }
   .principles .circleposition .c4 {
     left: -5%;
-    -ms-grid-row: 1;
     grid-row: 1;
-    -ms-grid-column: 5;
     grid-column: 5;
   }
   .home .footer {
@@ -940,4 +863,5 @@ li, ul, a {
     top: -90%;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=app3.css.map */

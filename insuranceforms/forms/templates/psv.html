@@ -14,19 +14,27 @@
   {% endblock %}
 </head>
 <body>
-  <div class="nav shadow-sm p-3 mb-5 bg-white rounded">
+  <div class="navi">
     <div class="logo">
-        <a href="index.html"><img src="{% static "img/logo.png" %}" alt=""></img></a>
+        <a href={% url 'welcome' %}><img src="{% static "img/logo.png" %}" alt=""></img></a>
     </div>
     
     <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="#">Motor</a>
-        <a href="property.html">Property</a>
-        <a href="fire.html">Fire</a>
-        <a href="liability.html">Liability</a>
-        <a href="marine.html">Marine</a>
-        <a href="inquiry.html">Contact Us</a>
+        <a href={% url 'welcome' %}>Home</a>
+        <div class="motor">
+            <a href="#" class="motor">Motor</a>
+            <ul class="motordrop">
+                <li><a href={% url 'privatemotor' %}>Private</a></li>
+                <li><a href={% url 'commercial' %}>Commercial</a></li>
+                <li><a href={% url 'psv' %}>PSV</a></li> 
+            </ul>
+        </div>
+        <a href={% url 'property' %}>Property</a>
+        <a href={% url 'fire' %}>Fire</a>
+        <a href={% url 'liability' %}>Liability</a>
+        <a href={% url 'marine' %}>Marine</a>
+        <a href={% url 'inquiry' %}>Contact Us</a>
+        
     </div>
 
     <input type="checkbox" id="toggle"/>
@@ -72,7 +80,14 @@
       <div class="footer">
         <div class="quick-link">
           <h2>QUICK LINK</h2>
-          <p>Home | General Liability | Education | Medical | Fire | All Risk | Electrical | Personal Accident | Personal Indemnity | Contractors All Risk | Money</p>
+          <p><a href={% url 'welcome' %}>Home</a> | 
+            <a href={% url 'privatemotor' %}>Private</a> | 
+            <a href={% url 'commercial' %}>Commercial</a> | 
+            <a href={% url 'property' %}>Property</a> | 
+            <a href={% url 'fire' %}>Fire</a> | 
+            <a href={% url 'liability' %}>Liability</a> |
+            <a href={% url 'marine' %}>Marine</a>  
+        </p>
         </div>
         <div class="contact">
           <h2>CONTACT</h2>
