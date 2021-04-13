@@ -517,7 +517,7 @@ li, ul, a {
     font-size: 12px;
   }
   .pages .info {
-    padding-top: 45%;
+    padding-top: 25%;
   }
   .footer2 {
     font-size: 10px;
@@ -558,6 +558,9 @@ li, ul, a {
             font-size: 12px;
             bottom: -35.9%;
         } */
+  }
+  .pages .info {
+    padding-top: 20%;
   }
   .request {
     font-size: 12px;
@@ -634,7 +637,7 @@ li, ul, a {
   }
   .pages .info {
     padding-right: 6em;
-    padding-top: 10%;
+    padding-top: 14%;
   }
   .pages .info h1 {
     text-align: left;
