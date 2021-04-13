@@ -293,7 +293,7 @@ li, ul, a {
 }
 
 .pages .info {
-  padding-top: 35%;
+  padding-top: 15%;
 }
 
 .pages .info h1 {
@@ -602,9 +602,6 @@ li, ul, a {
   .home .footer {
     top: 368%;
     left: 7%;
-  }
-  .pages {
-    font-size: 16px;
   }
 }
 
